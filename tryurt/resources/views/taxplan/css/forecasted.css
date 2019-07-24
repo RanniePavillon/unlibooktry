@@ -1,0 +1,36 @@
+.lineDivider {
+    height: 2px !important;
+    width: 950px !important;
+    background: #E2180F !important;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: -25px !important;
+}
+.generateTp{
+    float: left !important;
+    margin-left: 15px !important; 
+    margin-top: 8px !important;
+}
+.monthlyExpensesCont{
+	width:100% !important;
+}
+.buttonFS{
+	margin-right:25px !important;
+}
+.previewmodecontainer{
+	width: 736px !important;
+    box-shadow: 1px 1px 2px 2px #c8c8c8 !important;
+    margin: 40px auto !important;
+    overflow: scroll !important;
+    height: 483px !important;
+	padding: 20px 0px !important;
+}
+.tblCRB{
+	width: 98% !important;
+	margin-left: 7px !important;
+}
+.viewButton {
+    text-align: right !important;
+	margin-top:0px !important;
+    margin-right: 96px !important;
+}

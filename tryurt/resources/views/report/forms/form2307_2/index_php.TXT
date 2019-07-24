@@ -1,0 +1,177 @@
+<style>
+.BSText{
+	font-size:24px;
+	font-family:agency fb2;
+	color: #183867;
+	float: left; 
+}
+.buttonFS{
+	float:right;
+	margin-right:5px;
+}
+.FSPrint{
+	width: 100px;
+	height: 28px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	background-image: url('<?=URL?>public/images/printNew.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float:right;
+	margin-top:13px;
+}
+.DFs{
+	margin-top: 0px;
+	height: 65px;
+}
+.transDate{
+	font-family:Verdana;
+	font-size:12px;
+	color:#183867;
+}
+.generatediv{
+	float: right;
+	margin-right:5px;
+}
+.generate{
+	cursor: pointer;
+	width: 100px;
+	height: 28px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	background-image: url('<?=URL?>public/images/generate.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	outline-style:none;
+}
+.lineDivider{
+	height: 3px;
+	width: 737px;
+	background: #183867;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: -15px;
+}
+.form2307Holder{
+	width: 720px;
+	margin-top: 10px;
+	margin-left: 15px;
+	font-family: Agency FB;
+	font-size: 19px;
+	color: #183867;
+}
+.yearname2 {
+	width: 150px;
+	height: 28px;
+	padding-left: 5px;
+}
+.selectVendorName{
+	width: 150px;
+	height: 25px;
+}
+</style>
+<title>Form 2307</title>
+
+<link rel="shortcut icon" href="<?php echo URL; ?>public/images/title_logo.png">
+<link rel="stylesheet" href="<?php echo URL; ?>public/css/popup.css"/>
+<link rel="stylesheet" href="<?php echo URL; ?>public/css/loading.css"/>
+<link rel="stylesheet" href="<?php echo URL; ?>views/report/forms/form2307/indexs.css"/>
+<script src="<?php echo URL; ?>views/report/forms/form2307/index.js"></script>
+<?php
+$currentMonth = date("F");
+?>
+<div class="form2307Holder">
+    <div class="linereport"> 
+        <div class="BSForm">
+            <div class="BSText">Form 2307</div>
+           <div class="buttonFS">
+				<input type="button" class="FSPrint hidden" value="Export">
+				<input type="button" class="FSPrint printPdf hidden" value="" onClick="window.print()">
+			</div>
+            <div style="clear:both;"></div>
+            <div class="DFs">
+                <div style="margin-top:10px;">
+					<label class="transDate">Transaction Date:</label>
+					<input type="text" class="yearname2 hasDate" name="enddate" value="<?= date('m/d/Y') ?>">
+                    <div style="margin-top:10px;font-family:Verdana;font-size:12px;color:rgb(37, 181, 239);">
+                        <div style="float:left;margin-left:2px;">
+                            <label class="transDate">Vendor Name</label>
+                            <select class="selectVendorName">
+                                <option></option>
+                                <?php
+                                if (!empty($this->vendors)) {
+                                    foreach ($this->vendors as $vendor) {
+                                        echo '<option value="' . $vendor->id . '" title="' . $vendor->supplierAccount . '" >' . $vendor->name . '</option>';
+                                    }
+                                }
+                                ?>
+                            </select>
+                        </div>
+                        <div class="generatediv">
+							<input type="button" value="" class="generate reportgenerate"/>
+						</div>
+                        <div style="clear:both;"></div>
+						<div class="lineDivider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<?php
+	if (!$this->vendors) {
+		?>
+	   <div class="TC" style="margin-top: 80px;font-family: Verdana;font-size:14px;text-align: center;color:#183867;font-weight:bold;">
+			You don't have Form 2307.
+		</div>
+	<?php
+	}else{
+	?>
+    <form class="hidden">
+	<!--
+        <div class="buttonHolder itrbutton">
+            <input type="button" value="VIEW IN NEW TAB" class="viewForm addsavebutton buttonstylesA"/>
+            <input type="button" value="POST" class="postform2307 addsavebutton buttonstyles"/>
+        </div>
+	-->
+        <div class="gen101">
+            <div class="birform2307 divClass" id="divelement">
+				  
+			</div>
+        </div>
+	<!--
+        <div class="buttonHolder buttonbelow" id="post2307">
+            <input type="button" value="POST" class="postform1701 addsavebutton buttonstyles"/>	
+        </div>
+	-->
+    </form>
+	<?php
+	}
+	?>
+</div>
+
+
+<script>
+    $(function() {
+		<?php
+		if (isset($_GET['year'])) {
+			?>
+					$('.yearname2').val('<?= $_GET['year'] ?>');
+					$('.selectVendorName').val('<?= $_GET['vendor'] ?>');
+
+					$('.reportgenerate').click();
+			<?php
+		}
+		?>
+		
+		<?php
+		if (!$this->vendors) {
+		?>
+		   $('.DFs input').prop('disabled', true);
+		   $('.DFs select').prop('disabled', true);
+		<?php
+		}
+		?>
+    })
+</script>

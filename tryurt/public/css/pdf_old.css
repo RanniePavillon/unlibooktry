@@ -1,0 +1,108 @@
+@media print{
+	
+	.listForm,
+	.monthlyExpensesCont,
+	#header,
+	.linereport,
+	.buttonHolder,
+	.footerHolderNew,
+	.footerContainer,
+	.cnitableCollection,
+	.pdf,.pdf2,.invoiceHolderCollection,.xRight,.invoiceHolderInvoice,.cnitableAllInvoice,.cnitableAllInvoice2,
+	.closeCNTs,
+	#footer{
+		display: none;
+	}
+	
+	.reportHolderOR{
+		height: auto;
+		width: auto;
+		zoom: 1.25;
+		box-shadow: none;
+		overflow:hidden;
+		margin-top: -50px;
+	}
+	.gen101Holder, .gen101{
+		width: auto;
+		height: auto;
+		overflow: none;
+		box-shadow: none;
+	}
+	
+	.formreceipt{
+		zoom:160%;
+		margin-top:-100px !important;
+		margin-left:-30px !important;
+	}
+	
+	.gen101{
+		position: absolute;
+		zoom: 150%;
+		padding-left:0px;
+	}
+	.tbfromreg{
+		zoom: 0.9;
+		width: auto;
+	}
+	
+	.form1601cHolder{
+		/* width:120%; */
+		position: absolute;
+		zoom: 63%;
+		margin-top: -175px;
+		margin-left: -135px;
+	}
+	
+	.form1601eHolder{
+		position: absolute;
+		zoom: 62%;
+		margin-top: -110px;
+		margin-left: -125px;
+	}
+	.reportForm,
+	.evHolder, .printPrevHolder{
+		border:none !important;
+		border-radius:none !important;
+	}
+	
+	.expense_holder{
+		zoom:80%;
+		/* margin-left:-80px !important; */
+	}
+	
+	.PaymentTypeFormInvoice{
+		padding-top:80px;
+		zoom: 80%;
+	}
+	
+	.cnitableExp,
+	.searchindexAllE,
+	.inumberAllExp,
+	.xButton,
+	.voucher,
+	.paginate,
+	.paginateSelect,
+	.paginateNumber,
+	.tfootTable{
+		display:none;
+	}
+	
+	.tblAcctExpense th{
+		color:black;
+	}
+	
+	.evCont{
+		zoom:170%;
+	}
+	
+	.printPrevHolder{
+		zoom:160%;
+		margin-left:-30px !important;
+	}
+}
+@page{
+    size: Legal;
+	margin: 0 auto;
+	margin-bottom: 2cm;
+	margin-top: 2cm;
+}

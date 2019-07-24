@@ -1,0 +1,709 @@
+.headings	{
+	font-size: 28.24px;
+    font-family: agency fb2;
+    /* color: #c51400; */
+	color:rgb(201,17,17);
+    font-weight: bold;
+}
+.buttoninvoices{
+	margin-left: 5px;
+    font-size: 17px;
+    font-family: agency fb2;
+    margin-top: 5px;
+    cursor: pointer;
+    /* color: #C51400; */
+	color:rgb(201,17,17);
+    border: none;
+    font-weight: bold;
+    background: none;
+    outline-style: none;
+}
+.classa4{
+    background-color: #c51400; 
+}
+.tfootTable, th{
+	background-color: #c51400; 
+	/* background-color: rgb(201,17,17); */
+/*	background-color: rgb(167, 12, 12);*/
+    font-size: 12px;
+    color: white;
+    font-family: verdana;
+    text-align: left;
+    padding: 5px;
+}	
+.buttoncontainersviews{
+	float: left;
+    margin-top: 10px;
+	margin-left:10px;
+}
+.buttoncontainersviewstask{
+	float: left;
+	margin-left:20px;
+	margin-top: 8px;
+}
+.addsavebuttonbody{
+	font-family: agency fb2;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 5px;
+	color: rgb(230, 230, 230);
+	-moz-border-radius: 30px;
+	background: rgb(28, 181, 239);
+	background: -moz-linear-gradient(90deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	background: -webkit-linear-gradient(90deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	background: -o-linear-gradient(90deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	background: -ms-linear-gradient(90deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	background: linear-gradient(0deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	-moz-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	border:none;
+}
+
+.buttonslarge{
+	font-family: agency fb2;
+    font-size: 19px;
+    font-weight: bold;
+	margin-right: 77px;
+	float: right;
+	width: 217px;
+	height: 44px;
+	border: none;
+	border-radius: 10px;
+
+	border-radius: 3px;
+	box-shadow: 0 3px 2px -2px gray;
+	-moz-box-shadow: inset 0px 1px 0px 0px #caefab;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #caefab;
+	background-color: #77d42a;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px #282927;
+	 background-color: #82CB37; background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(216, 40, 21)), to(rgb(167, 12, 12)));
+	 background-image: -webkit-linear-gradient(top, rgb(216, 40, 21), rgb(167, 12, 12));
+	 background-image: -moz-linear-gradient(top, rgb(216, 40, 21), rgb(167, 12, 12));
+	 background-image: -ms-linear-gradient(top, rgb(216, 40, 21), rgb(167, 12, 12));
+	 background-image: -o-linear-gradient(top, rgb(216, 40, 21), rgb(167, 12, 12));
+	 background-image: linear-gradient(to bottom, rgb(216, 40, 21), rgb(167, 12, 12));filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#82CB37, endColorstr=#67B137);
+	-webkit-box-shadow: 0px 1px 1px rgba(251, 251, 251, 0.75) inset;
+	-moz-box-shadow: 0px 1px 1px rgba(251, 251, 251, 0.75) inset;
+	box-shadow: 0px -1px 1px rgb(111, 111, 111) inset;
+	
+}
+.largebuttonsconbilling {position:relative}
+.largebuttonsconbilling:after {
+    content: url('../images/whitecross.png');
+    left:572px; top:-3px;
+    position:absolute;
+    pointer-events:none;
+}
+.largebuttonsconbilling:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    /* background:#f8f8f8; */
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+.labelclass {position:relative}
+.labelclass:after {
+    content: url('../images/backselect.png');
+    right:2px; top:-8px;
+    padding:0 0 2px;
+    position:absolute;
+    pointer-events:none;
+}
+.labelclass:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+.labelclasstask {position:relative}
+.labelclasstask:after {
+    content: url('../images/backselect.png');
+    right:5px; top:7px;
+    padding:0 0 2px;
+    position:absolute;
+    pointer-events:none;
+}
+.labelclasstask:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+.inumber{
+	width: 145px;
+	height: 29px;
+	padding-left:5px;
+	border: none;
+	font-size: 12px;
+	font-size:12px;
+	font-family: agency fb2;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 2px;
+	color: rgb(230, 230, 230);
+	-moz-border-radius: 30px;
+	background: rgb(28, 181, 239);
+	background: -moz-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -webkit-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -o-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -ms-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: linear-gradient(0deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	-moz-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	appearance:none; 
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none;
+}
+ .searchindexpayment{
+	margin-left: -4px;
+	width: 152px;
+	height: 30px;
+	border: none;
+	background: none;
+	padding-left: 7px; 
+	padding-right: 46px; 
+	text-align: left;
+	/* background-image: url('../images/searchback.png');
+	background-size:100% 100%; */
+	border-radius:3px;
+	text-align: center;
+	font-size:13px;
+	border-radius:3px;
+	padding-top:2px;
+	font-family: agency fb2;
+	font-size: 15px;
+	font-weight: bold;
+	color: rgb(230, 230, 230);
+	-moz-border-radius: 30px;
+	background: -moz-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -webkit-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -o-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -ms-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: linear-gradient(0deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	-moz-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+}
+.searchindex{
+	width: 130px;
+	height: 30px;
+	border: none;
+	background-repeat:no-repeat;
+	padding-right: 25px; 
+	text-align: center;
+	font-size:13px;
+	border-radius:3px;
+	padding-top:2px;
+	font-size:12px;
+	font-family: agency fb2;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 2px;
+	color: rgb(230, 230, 230);
+	-moz-border-radius: 30px;
+	background: rgb(28, 181, 239);
+	background: -moz-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -webkit-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -o-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -ms-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: linear-gradient(0deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	-moz-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+}
+.searchindex22{
+	width: 130px;
+	height: 30px;
+	border: none;
+	background-repeat:no-repeat;
+	padding-right: 25px; 
+	text-align: center;
+	font-size:13px;
+	border-radius:3px;
+	padding-top:2px;
+	font-size:12px;
+	font-family: agency fb2;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 2px;
+	color: rgb(230, 230, 230);
+	-moz-border-radius: 30px;
+	background: rgb(28, 181, 239);
+	background: -moz-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -webkit-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -o-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -ms-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: linear-gradient(0deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	-moz-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+}
+.cSearch{
+	width: 130px;
+	height: 30px;
+	border: none;
+	background-repeat:no-repeat;
+	padding-right: 25px; 
+	text-align: center;
+	font-size:13px;
+	border-radius:3px;
+	padding-top:2px;
+	font-size:12px;
+	font-family: agency fb2;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 2px;
+	color: rgb(230, 230, 230);
+	-moz-border-radius: 30px;
+	background: rgb(28, 181, 239);
+	background: -moz-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -webkit-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -o-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -ms-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: linear-gradient(0deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	-moz-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+}
+.search2Col{
+	width: 29px;
+    height: 30px;
+    border: none;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, verdana, sans-serif, tahoma;
+    cursor: pointer;
+    border: none;
+    color: whitesmoke;
+    background: none;
+    background-image: url('../images/searchback.png');
+    background-color: rgb(230, 250, 222);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 313px;
+    background-size: 100%;
+}
+.search2Colpay{
+	width: 29px;
+    height: 30px;
+    border: none;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, verdana, sans-serif, tahoma;
+    cursor: pointer;
+    border: none;
+    color: whitesmoke;
+    background: none;
+    background-image: url('../images/searchback.png');
+    background-color: rgb(230, 250, 222);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top:6px !important;
+    margin-left: -29px !important;
+    background-size: 100%;
+}
+.search2vendor{
+	width: 29px;
+    height: 30px;
+    border: none;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, verdana, sans-serif, tahoma;
+    cursor: pointer;
+    border: none;
+    color: whitesmoke;
+    background: none;
+    background-image: url('../images/searchback.png');
+    background-color: rgb(230, 250, 222);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top:0px;
+    margin-left: -31px;
+    background-size: 100%;
+}
+.search22Col{
+	width: 29px;
+    height: 30px;
+    border: none;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, verdana, sans-serif, tahoma;
+    cursor: pointer;
+    border: none;
+    color: whitesmoke;
+    background: none;
+    background-image: url('../images/searchback.png');
+    background-color: rgb(230, 250, 222);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: -31px;
+    background-size: 100%;
+}
+.SearchTasks {
+	width: 29px;
+    height: 30px;
+    border: none;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, verdana, sans-serif, tahoma;
+    cursor: pointer;
+    border: none;
+    color: whitesmoke;
+    background: none;
+    background-image: url('../images/searchback.png');
+    background-color: rgb(230, 250, 222);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: -34px;
+	margin-top:6px;
+    background-size: 100%;
+}
+.createNCR{
+    /*padding: 12px 31px;*/
+/*    text-align: center;*/
+}
+#newReceipt{
+	/* font-family: Agency FB; */
+	margin-left: 10px;
+	float: left;
+	width:100%;
+	/*   margin-top: 28px; */
+}
+.imEx{
+	background: rgb(28, 181, 239);
+	background: -moz-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -webkit-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -o-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: -ms-linear-gradient(90deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	background: linear-gradient(0deg, rgb(197, 20, 0) 30%, rgb(197, 20, 0) 79%);
+	-moz-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	width: 143px;
+    height: 29px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+	font-family: agency fb2;
+	font-size: 15px;
+	color:rgb(230, 230, 230);
+}
+.crosssales {position:relative}
+.crosssales:after {
+    content: url('../images/whitecross.png');
+    left: 515px;
+    top:-17px;
+    position:absolute;
+    pointer-events:none;
+}
+.crosssalespost {position:relative}
+.crosssalespost:after {
+    content: url('../images/whitecross.png');
+    left: 5px;
+    top:9px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossbilling {position:relative}
+.crossbilling:after {
+    content: url('../images/whitecross.png');
+    left: 595px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossbillingNew {position:relative}
+.crossbillingNew:after {
+    content: url('../images/whitecross.png');
+    left: 3px;
+    top:9px;
+    position:absolute;
+    pointer-events:none;
+}
+.crosscollection {position:relative}
+.crosscollection:after {
+    content: url('../images/whitecross.png');
+    left: 545px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crosscustomer{position:relative}
+.crosscustomer:after {
+    content: url('../images/whitecross.png');
+    left: 555px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crosstask{position:relative}
+.crosstask:after {
+    content: url('../images/whitecross.png');
+    left: 523px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossSalesOrder{position:relative}
+.crossSalesOrder:after {
+    content: url('../images/whitecross.png');
+    left: 535px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossSalesInvoiceDelivery{position:relative}
+.crossSalesInvoiceDelivery:after {
+    content: url('../images/whitecross.png');
+    left: 500px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossSalesInvoice{position:relative}
+.crossSalesInvoice:after {
+    content: url('../images/whitecross.png');
+    left: 540px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossPermission{position:relative}
+.crossPermission:after {
+    content: url('../images/whitecross.png');
+    left: 560px;
+    top:-17px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossJournal{position:relative}
+.crossJournal:after {
+    content: url('../images/whitecross.png');
+    left: 570px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossSalesCol{position:relative}
+.crossSalesCol:after {
+    content: url('../images/whitecross.png');
+    left: 555px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossSalesReturn{position:relative}
+.crossSalesReturn:after {
+    content: url('../images/whitecross.png');
+    left: 507px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossSalesItem{position:relative}
+.crossSalesItem:after {
+    content: url('../images/whitecross.png');
+    left:630px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossPurchaseInvoice{position:relative}
+.crossPurchaseInvoice:after {
+    content: url('../images/whitecross.png');
+    left:480px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossPurchaseOrder{position:relative}
+.crossPurchaseOrder:after {
+    content: url('../images/whitecross.png');
+    left: 510px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossReceiveOrder{position:relative}
+.crossReceiveOrder:after {
+    content: url('../images/whitecross.png');
+    left:495px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossPurchaseReturn{position:relative}
+.crossPurchaseReturn:after {
+    content: url('../images/whitecross.png');
+    left:448px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossexpense{position:relative}
+.crossexpense:after {
+    content: url('../images/whitecross.png');
+    left:580px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossexpensePost{position:relative}
+.crossexpensePost:after {
+    content: url('../images/whitecross.png');
+    left:30px;
+    top:9px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossBillPayable{position:relative}
+.crossBillPayable:after {
+    content: url('../images/whitecross.png');
+    left:585px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossBillPayablePost{position:relative}
+.crossBillPayablePost:after {
+    content: url('../images/whitecross.png');
+    left:506px;
+    top:-2px;
+    position:absolute;
+    pointer-events:none;
+}
+
+.crosspaymentexp {position:relative}
+.crosspaymentexp:after {
+    content: url('../images/whitecross.png');
+    left:585px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossSupplier {position:relative}
+.crossSupplier:after {
+    content: url('../images/whitecross.png');
+    left:595px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossChart {position:relative}
+.crossChart:after {
+    content: url('../images/whitecross.png');
+    left:520px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossSaleslocation{position:relative}
+.crossSaleslocation:after {
+    content: url('../images/whitecross.png');
+    left:535px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossCashInvoice{position:relative}
+.crossCashInvoice:after {
+    content: url('../images/whitecross.png');
+    left: 530px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossTransfer{position:relative}
+.crossTransfer:after {
+    content: url('../images/whitecross.png');
+    left: 460px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crosscategory{position:relative}
+.crosscategory:after {
+    content: url('../images/whitecross.png');
+    left: 503px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+
+.loadingHolder{
+	margin-top:15%;
+	margin-left:45%;
+}
+.loadingimg{
+	width:140px;
+	height:140px;
+}
+.crossiNVENTORY{position:relative}
+.crossiNVENTORY:after {
+    content: url('../images/whitecross.png');
+    left: 610px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+
+.crossCm{position:relative}
+.crossCm:after {
+    content: url('../images/whitecross.png');
+    left: 670px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+
+.crossSalesSettings{position:relative}
+.crossSalesSettings:after {
+    content: url('../images/whitecross.png');
+    left: 541px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossSalesArea{position:relative}
+.crossSalesArea:after {
+    content: url('../images/whitecross.png');
+    left:630px;
+    top:-18px;
+    position:absolute;
+    pointer-events:none;
+}
+.crossSalesbranch{position:relative}
+.crossSalesbranch:after {
+    content: url('../images/whitecross.png');
+    left:598px;
+    top:9px;
+    position:absolute;
+    pointer-events:none;
+}
+
+.footerHeight
+{
+padding-bottom: 50px;
+}
+.moduleHeight
+{
+height: 820px;
+overflow-y: auto;
+}
+
+.tdPad{
+	padding:0px;
+}
+
+
+
+
+
+
+
+
+
+
+

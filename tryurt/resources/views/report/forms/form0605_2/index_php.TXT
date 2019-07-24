@@ -1,0 +1,203 @@
+<style>
+.buttonbelow{
+	float: right;
+	  padding-right: 25px;
+	  margin-top: 15px;
+}
+/* .generatedReports2 {
+  zoom: 55%;
+  -moz-transform: scale(0.55);
+}  */
+.birform0605{
+	transform: scale(0.31);
+	/* margin-top: -600px; */
+	/* margin-left: -389px; */
+	image-rendering: optimizeSpeed;
+	/* image-rendering: -moz-crisp-edges; */
+	image-rendering: -o-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: optimize-contrast;
+	-ms-interpolation-mode: nearest-neighbor;
+}
+.monLabel{
+	color: rgb(37, 181, 239);
+	font-size: 12px!important;
+	font-family:Verdana;
+	padding-left: 5px !important;
+}
+.form0605Holder{
+	width: 720px;
+	margin-top: 10px;
+	margin-left: 15px;
+	font-family: Agency FB;
+	font-size: 19px;
+	color: #183867;
+}
+.BSText{
+	font-size:24px;
+	font-family:agency fb2;
+	color: #183867;
+	float: left;
+	padding:0px!important;
+}
+.DFs{
+	padding-left:0px!important;
+	margin-top:0px!important;
+	width:720px!important
+}
+.buttonFS{
+	float:right;
+	margin-right:5px;
+}
+.FSPrint{
+	width: 100px;
+	height: 28px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	background-image: url('<?=URL?>public/images/printNew.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float:right;
+	margin-top:13px;
+}
+.generatediv{
+	float: right;
+	margin-right:5px;
+	margin-top: 8px;
+}
+.generate{
+	cursor: pointer;
+	width: 100px;
+	height: 28px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	background-image: url('<?=URL?>public/images/generate.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	outline-style:none;
+}
+.txtMOnthYear {
+    font-family: Verdana;
+    font-size: 12px;
+    color: #183867;
+}
+.monthname{
+	width: 133px !important;
+	height: 25px !important;
+	font-size: 11px;
+	font-family: Verdana;
+	padding-left: 5px !important;
+	box-shadow: none;
+	border: 1px solid gray;
+	margin-right: 5px;
+	border-radius: 5px;
+	outline-style: none;
+}
+.yearname{
+	width: 69px !important;
+	height: 25px !important;
+	font-family: Verdana;
+	font-size: 11px;
+	padding-left: 5px !important;
+	border: 1px solid gray;
+	border-radius: 5px;
+	outline-style: none;
+}
+.hmoDivider {
+    height: 2px;
+    border-radius: 2px;
+    background: #183867!important;
+    margin-top: 10px;
+    margin-left: -16px!important;
+	width: 739px!important;
+}
+</style>
+<link rel="stylesheet" href="<?php echo URL; ?>public/css/popup.css"/>
+<link rel="stylesheet" href="<?php echo URL; ?>public/css/loading.css"/>
+<script src="<?php echo URL; ?>views/report/forms/form0605/index.js"></script>
+<link href="<?php echo URL; ?>views/report/forms/form0605/index.css" rel="stylesheet" />
+<div class="form0605Holder">
+    <div class="linereport2"> 
+        <div class="BSForm">
+            <div class="BSText">Form 0605</div>
+            <div class="buttonFS">
+				<input type="button" class="FSPrint hidden" value="Export">
+				<input type="button" class="FSPrint printPdf hidden" value="" onClick="window.print()">
+			</div>
+			<div style="clear:both;"></div>
+            <div class="DFs">
+				<div style="float:left;">	
+					<label class="txtMOnthYear">Month:</label>
+					<select name="month" style="margin-top:10px;" class="monthname">
+						<?php
+						$currentMonth = date("m");
+						for ($x = 1; $x <= 12; $x++) {
+							if ($x == $currentMonth) {
+								?>
+								<option selected='selected' value="<?= strtolower(date('F', strtotime('2014-' . $x . '-01'))) ?>">
+									<?= date('F', strtotime('2014-' . $x . '-01')) ?></option>
+
+								<?php
+							} else {
+								
+								?>
+							<option value="<?= strtolower(date('F', strtotime('2014-' . $x . '-01'))) ?>">
+								<?= date('F', strtotime('2014-' . $x . '-01')) ?></option>
+							<?php
+							}
+						}
+						?>
+					</select>
+					<label class="txtMOnthYear">Year:</label>
+					<input type="number" name="year" value="<?= date('Y') ?>"  class="yearname" style="margin-left:5px;"/>
+				</div>
+				<div class="generatediv">
+					<input type="button" value="" class="generate reportgenerate"/>
+				</div>
+				<div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="hmoDivider"></div>	
+    </div>
+
+    <form class="hidden">
+        <div class="buttonHolder itrbutton buttonspost">
+            <!--<input type="submit" value="SAVE" class="addsavebutton buttonstyles"/>-->
+			<input type="button" value="VIEW IN NEW TAB" class="viewForm addsavebutton buttonstylesA"/>
+            <input type="button" value="POST" class="postform0605 addsavebutton buttonstyles"/>
+        </div>
+        <!--<div class="zoomDiv">
+                <input type="button" id="zoomOut" value="-">
+                <input type="button" id="zoomIn" value="+">
+        </div>-->
+		<div class="gen101">
+			<div class="generatedReports2  birform0605 divClass " id="divelement">
+
+			</div>
+        </div>
+
+        <div class="buttonHolder buttonbelow">
+            <!--<input type="submit" value="SAVE" class="addsavebutton buttonstyles"/>-->
+            <input type="button" value="POST" class="postform0605 addsavebutton buttonstyles"/>
+        </div>
+    </form>
+</div>
+
+<script>
+    $(function() {
+		
+		<?php
+			if(isset($_GET['month'])){
+		?>
+				$('select[name="month"]').val('<?= $_GET['month'] ?>');
+				$('input[name="year"]').val('<?= $_GET['year'] ?>');
+				
+				$('.reportgenerate').click();
+		<?php
+			}
+		?>
+
+    })
+</script>

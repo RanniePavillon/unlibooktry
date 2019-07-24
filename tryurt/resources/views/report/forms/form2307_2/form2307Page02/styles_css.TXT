@@ -1,0 +1,24 @@
+
+ #background2 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 1581px;
+	 height: 2310px; 
+	 overflow: hidden;
+	 z-index:0;
+	 zoom: 100%;
+	} 
+
+ #Layer8 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 1581px;
+	 height: 2310px;
+	 z-index:1;
+} 

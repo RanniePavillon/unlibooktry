@@ -1,0 +1,188 @@
+.monthlyExpensesCont, .auditTrialCont{
+	width:720px !important;
+	margin: auto !important;
+}
+.bs_mainContainer{
+	width:100%;
+	margin: auto !important;
+	border: 2px solid black;
+}
+.lineDivider{
+	/* margin-left: 0px !important; */
+}
+.lineDividerbilling{
+	width: 720px !important;
+}
+.DFs{
+	width:100% !important;
+}
+.reportHolderContainer {
+	width:720px !important;
+	margin:auto!important;
+}
+@font-face {
+	font-family: 'agency fb'; /*a name to be used later*/
+	src: url('../../public/fonts/AGENCYR.ttf'); /*URL to font*/
+}
+
+@font-face {
+	font-family: 'agency fb2'; /*a name to be used later*/
+	src: url('../../public/fonts/AGENCYB.ttf'); /*URL to font*/
+}/* 
+.FSGen {
+	margin-right:128px!important;
+} */
+.mainformitemsum{
+	width:720px !important;
+	margin: auto !important;
+}
+.BSForm{
+	width:720px!important;
+	margin:auto!important;
+}
+.form1601cHolderForm{
+	width:720px !important;
+	margin: auto !important;
+}
+.buttonbelow{
+	margin-right:120px!important;
+}
+.buttonHolder {
+	margin-right:0px!important;
+}
+.form1601eHolderForm{
+	width:746px !important;
+	margin: auto !important;
+}
+.form1601eHolder{
+	margin-left: -266px !important;
+}
+.form2550mHolderForm{
+	width:720px !important;
+	margin: auto !important;
+}
+.form2550qHolderForm{
+	width:720px !important;
+	margin: auto !important;
+}
+.form1701HolderForm{
+	width:720px !important;
+	margin: auto !important;
+}
+.viewButton{
+	/* margin-right:0px!important; */
+}
+.generatediv{
+	margin-right:0px!important;
+}
+.generatedivE{
+	margin-right:21px!important;
+}
+.gen101HolderE{
+	width: 740px !important;
+}
+.BSFormE{
+	width: 760px!important;
+	margin: auto!important;
+}
+.buttonFS{
+	margin-right:0px !important;
+}
+.buttonFSe{
+	margin-right:6px !important;
+}
+.fromReg{
+	margin-left:0px!important;
+}
+body{
+	background:#fff!important;
+}
+.reportHolderOR{
+	margin-left:-5px!important;
+	height:480px !important;
+}
+.tblmainsumlist{
+	margin-left:0px;
+}
+.tblShowReport{
+	margin-left:10px!important;
+}
+.tblShowReportsoa{
+	 width: 98% !important;
+}
+.tblCRB{
+	margin-left:10px!important;
+}
+.tblCRBmor{
+	margin-left:17px!important;
+}
+.monthlyExpensesContsoa{
+	width: 830px !important;
+	margin: auto!important;
+}
+.inpAddressSoa{
+	margin-left: 258px !important;
+}
+.reportHolderORsoa{
+	width: 830px !important;
+	margin-left: -56px!important;
+	height:490px !important;
+}
+.fromRegsoa{
+	width: 797px !important;
+}
+.lineDividersoa{
+	width: 855px !important;
+}
+.lineDividerE{
+  width: 778px !important;
+}
+.reportHolderORbilling{
+	width: 720px !important;
+	margin-left:-13px !important;
+	height:490px !important;
+}
+.monthlyExpensesContbilling{
+	width: 720px !important;
+	margin: auto !important;
+	
+}
+.reportHolderORcrb{
+	width: 720px;
+	margin-left: -5px!important;
+	height:480px !important;
+}
+.monthlyExpensesContcrb{
+	width: 720px !important;
+	margin: auto !important;
+}
+.lineDividercrb{
+	width: 960px !important;
+}
+.reportHolderORcdb{
+	width: 720px !important;
+	height:480px !important;
+}
+.monthlyExpensesContcdb{
+	width: 720px !important;
+	margin: auto !important;
+}
+.lineDividercdb{
+	width: 763px !important;
+}
+.tblCRBjournal{
+	margin-left: 14px!important;
+}
+.incomeStatement{
+	padding-left:23px !important;
+}
+.tb_table_holder{
+	margin-left:10px !important;
+}
+.gen101Holder{
+	height:460px !important;
+}
+.trialcontainer{
+	margin-left:-5px !important;
+	height:533px !important;
+}

@@ -1,0 +1,66 @@
+@media print{
+	.top,
+	.hrdashreport,
+	.listForm,
+	.BSForm,
+	.fileAndPayOnline,
+	.buttonHolder,
+	.footerHolderNew{
+		display: none;
+	}
+	.reportForm{
+		border: none !important;
+	}
+	.gen101Holder{
+		box-shadow: none !important;
+		overflow: hidden !important;
+		width: 100% !important;
+		height: auto !important;
+		margin: auto !important;
+		/* border:2px solid black !important; */
+	}
+	.form1601cHolder{
+		margin-left: -213px !important;
+		margin-top: -300px;
+		width:150% !important;
+		transform: scale(.58) !important;
+		/* margin: auto !important; */
+	}
+	.form1601eHolder{
+		margin-left: -215px !important;
+		width:150% !important;
+		transform: scale(0.6) !important;
+	}
+	.form2550mHolder{
+		margin-left: -215px !important;
+		width: 150% !important;
+		transform: scale(0.6) !important;
+		margin-top: -470px !important;
+	}
+	.form2550qHolder{
+		margin-left: -215px !important;
+		width: 150% !important;
+		transform: scale(0.6) !important;
+		margin-top: -470px !important;
+	}
+	.form1701qHolder{
+		margin-left: -120px !important;
+		width: 100% !important;
+		transform: scale(0.6) !important;
+		margin-top: -1290px !important;
+	}
+	.form1701Holder{
+		margin-left: -130px !important;
+		width: 100% !important;
+		transform: scale(0.6) !important;
+		margin-top: -4271px !important;
+	}
+	
+}
+@page{
+    size: A4;
+	margin-left:14.016px;
+	margin-right:14.208px;
+	margin-bottom:15.00px;
+	margin-top:15.00px;
+}

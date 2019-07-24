@@ -1,0 +1,99 @@
+<style>
+    .taxexpert{
+        background-color:#8cbdde;
+    }
+    .datetimes{
+        color:#1B89D3;
+        font-size:12px!important;
+        margin-left:10px;
+    }
+</style>
+
+<link rel="stylesheet" href="<?php echo URL; ?>public/css/popup.css"/>
+<link rel="stylesheet" href="<?php echo URL; ?>views/support/css/list.css"/>
+<link rel="stylesheet" href="<?php echo URL; ?>views/support/css/supportheader.css"/>
+<script src="<?php echo URL; ?>views/support/js/list.js"></script>
+
+<?php
+$cl = strtolower(Session::getSession('class'));
+$fc = Session::getSession('function');
+?>
+<div class="listformcontainer">
+    <div class="listformsupportlist">
+        <img class="logosupportimg"  src="<?= URL ?>public/images/medical PNG.png">
+        <div class="linkformsupport">
+            <a href="<?= URL ?>support/lists" style="padding: 5px 9px;" class="mainHeaderLink supportlink">ASK TAX EXPERT </a>
+            <a href="<?= URL ?>support/articles" style="padding: 5px 9px;" class="mainHeaderLink supportlink taxexpert">ARTICLES </a>
+            <a href="<?= URL ?>support/taxNews" style="padding: 5px 9px;" class="mainHeaderLink supportlink">TAX NEWS FOR DOCTORS </a>
+            <a href="<?= URL ?>support/birRules" style="padding: 5px 9px;" class="mainHeaderLink supportlink">BIR TAX RULES & UPDATES </a>
+        </div>
+        <div class="mainmenuform">
+            <a href="<?= URL ?>Dashboard"><input type="button" class="mainmenu"></a>
+        </div>
+        <div class="bodyask bodyarticle">
+            <?php
+            if ($this->data) {
+                foreach ($this->data as $item) {
+                    ?>
+                    <div class="spacearticles">
+                        <div>
+                            <span class="commentsname"><?php echo $item->title ?> 
+								<span class="datetimes"><?php echo date('F d', strtotime($item->articlesDate)) ?>
+									<span>at <?= date('h:i a', strtotime($item->articlesDate)) ?></span>
+								</span>
+							</span>
+                        </div>
+                        <div class="commentsnamearticles">
+                            <span><?php echo $item->remarks ?>
+                                <a href="<?= URL ?>views/support/pdf/<?= $item->link ?> " class="view" target="_blank" style="color: #183867;font-weight: bold;">VIEW FULL CONTENT</a></span>
+                            <!--<br>
+                                <br>
+                                <a href="" class="likes">Like</a>&nbsp
+                                <a href="" class="likes">Comment</a>&nbsp
+                                <a href="" class="likes">Share</a>-->
+                        </div>
+                    </div>
+                    <?php
+                }
+            }
+            ?>
+
+            <div class="paginate">
+                <?php
+                if ($this->pagecount > 1 && $this->page != 1) {
+                    ?>
+                    <a href="<?php echo URL ?>support/articles?page=1" class="paginateimg"><< First</a> &nbsp 
+                    <a href="<?php echo URL ?>support/articles?page=<?php echo $this->page - 1 ?>" class="paginateimg"><<</a> &nbsp 
+                    <?php
+                }
+
+                for ($i = 1; $i <= $this->pagecount; $i++) {
+                    ?>
+                    <a href="<?php echo URL ?>support/articles?page=<?php echo $i ?>" class="paginateimg <?php echo $i == $this->page ? 'active' : '' ?>"><?php echo $i ?></a> &nbsp 
+                    <?php
+                }
+
+                if ($this->pagecount > 1 && $this->page < $this->pagecount) {
+                    ?>                             
+                    <a href="<?php echo URL ?>support/articles?page=<?php echo $this->page + 1 ?>" class="paginateimg">>></a> &nbsp 
+                    <a href="<?php echo URL ?>support/articles?page=<?php echo $this->pagecount ?>" class="paginateimg">Last >></a>
+                <?php } ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="hidden popup"></div>
+
+<script>
+    /* $(function(){
+     $('.see').click(function(){
+     //$(".other").removeClass('hidden');
+     $('.see').parents(".formCertificate").find(".seemoreText").addClass('hidden');
+     $('.see').removeClass('hidden');
+     $(this).parents(".formCertificate").find(".seemoreText").removeClass('hidden');
+     $(this).addClass('hidden');
+     return false;
+     });
+     }) */
+</script>

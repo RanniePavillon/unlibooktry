@@ -1,0 +1,709 @@
+ body {
+	margin: 0;
+	padding: 0;
+ }
+ 
+ #background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 2344px;
+	 height: 3752px; 
+	 overflow: hidden;
+	 z-index:0;
+	} 
+
+ #background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 2344px;
+	 height: 3752px;
+	 z-index:1;
+} 
+
+ #item1calendar 
+{ 
+	 left: 280px; 
+	 top: 544px; 
+	 position: absolute; 
+	 width: 48px;
+	 height: 42px;
+	 z-index:2;
+}
+
+ #item1fiscal 
+{ 
+	 left: 500px; 
+	 top: 544px; 
+	 position: absolute; 
+	 width: 46px;
+	 height: 41px;
+	 z-index:3;
+} 
+
+ #item2month 
+{ 
+	 left: 353px; 
+	 top: 596px; 
+	 position: absolute; 
+	 width: 100px;
+	 height: 76px;
+	 z-index:4;
+} 
+
+ #item2year 
+{ 
+	 left: 456px; 
+	 top: 596px; 
+	 position: absolute; 
+	 width: 213px;
+	 height: 77px;
+	 z-index:5;
+} 
+
+ #item31st 
+{ 
+	 left: 742px; 
+	 top: 596px; 
+	 position: absolute; 
+	 width: 47px;
+	 height: 40px;
+	 z-index:6;
+} 
+
+ #item32nd 
+{ 
+	 left: 862px; 
+	 top: 596px; 
+	 position: absolute; 
+	 width: 47px;
+	 height: 41px;
+	 z-index:7;
+} 
+
+ #item33rd 
+{ 
+	 left: 970px; 
+	 top: 596px; 
+	 position: absolute; 
+	 width: 47px;
+	 height: 40px;
+	 z-index:8;
+} 
+
+ #item34th 
+{ 
+	 left: 1082px; 
+	 top: 596px; 
+	 position: absolute; 
+	 width: 45px;
+	 height: 41px;
+	 z-index:9;
+} 
+
+ #item4month 
+{ 
+	 left: 1202px; 
+	 top: 595px; 
+	 position: absolute; 
+	 width: 98px;
+	 height: 77px;
+	 z-index:10;
+} 
+
+ #item4day 
+{ 
+	 left: 1304px; 
+	 top: 596px; 
+	 position: absolute; 
+	 width: 100px;
+	 height: 76px;
+	 z-index:11;
+} 
+
+ #item4year 
+{ 
+	 left: 1411px; 
+	 top: 596px; 
+	 position: absolute; 
+	 width: 213px;
+	 height: 77px;
+	 z-index:12;
+} 
+
+ #item5 
+{ 
+	 left: 1823px; 
+	 top: 596px; 
+	 position: absolute; 
+	 width: 115px;
+	 height: 77px;
+	 z-index:13;
+} 
+
+ #item6 
+{ 
+	 left: 2030px; 
+	 top: 596px; 
+	 position: absolute; 
+	 width: 217px;
+	 height: 77px;
+	 z-index:14;
+} 
+
+ #item7month 
+{ 
+	 left: 191px; 
+	 top: 746px; 
+	 position: absolute; 
+	 width: 121px;
+	 height: 79px;
+	 z-index:15;
+} 
+
+ #item7day 
+{ 
+	 left: 314px; 
+	 top: 745px; 
+	 position: absolute; 
+	 width: 118px;
+	 height: 81px;
+	 z-index:16;
+} 
+
+ #item7year 
+{ 
+	 left: 440px; 
+	 top: 745px; 
+	 position: absolute; 
+	 width: 234px;
+	 height: 80px;
+	 z-index:17;
+} 
+
+ #item8 
+{ 
+	 left: 848px; 
+	 top: 749px; 
+	 position: absolute; 
+	 width: 115px;
+	 height: 76px;
+	 z-index:18;
+} 
+
+ #bcsno 
+{ 
+	 left: 1267px; 
+	 top: 744px; 
+	 position: absolute; 
+	 width: 980px;
+	 height: 79px;
+	 z-index:19;
+} 
+
+ #item9tin1 
+{ 
+	 left: 170px; 
+	 top: 993px; 
+	 position: absolute; 
+	 width: 154px;
+	 height: 77px;
+	 z-index:20;
+} 
+
+ #item9tin2 
+{ 
+	 left: 374px; 
+	 top: 994px; 
+	 position: absolute; 
+	 width: 148px;
+	 height: 76px;
+	 z-index:21;
+} 
+
+ #item9tin3 
+{ 
+	 left: 575px; 
+	 top: 995px; 
+	 position: absolute; 
+	 width: 146px;
+	 height: 74px;
+	 z-index:22;
+} 
+
+ #item9tin4 
+{ 
+	 left: 761px; 
+	 top: 995px; 
+	 position: absolute; 
+	 width: 153px;
+	 height: 74px;
+	 z-index:23;
+} 
+
+ #item10 
+{ 
+	 left: 968px; 
+	 top: 994px; 
+	 position: absolute; 
+	 width: 163px;
+	 height: 75px;
+	 z-index:24;
+} 
+
+ #item11i 
+{ 
+	 left: 1274px; 
+	 top: 993px; 
+	 position: absolute; 
+	 width: 58px;
+	 height: 75px;
+	 z-index:25;
+} 
+
+ #item11n 
+{ 
+	 left: 1423px; 
+	 top: 994px; 
+	 position: absolute; 
+	 width: 60px;
+	 height: 75px;
+	 z-index:26;
+} 
+
+ #item12 
+{ 
+	 left: 1640px; 
+	 top: 993px; 
+	 position: absolute; 
+	 width: 610px;
+	 height: 76px;
+	 z-index:27;
+} 
+
+ #item13 
+{ 
+	 left: 391px; 
+	 top: 1101px; 
+	 position: absolute; 
+	 width: 1377px;
+	 height: 77px;
+	 z-index:28;
+} 
+
+ #item14 
+{ 
+	 left: 1875px; 
+	 top: 1138px; 
+	 position: absolute; 
+	 width: 392px;
+	 height: 75px;
+	 z-index:29;
+} 
+
+ #item15 
+{ 
+	 left: 366px; 
+	 top: 1256px; 
+	 position: absolute; 
+	 width: 1403px;
+	 height: 73px;
+	 z-index:30;
+} 
+
+ #item16 
+{ 
+	 left: 2029px; 
+	 top: 1255px; 
+	 position: absolute; 
+	 width: 220px;
+	 height: 75px;
+	 z-index:31;
+} 
+
+ #item17vpsa 
+{ 
+	 left: 140px; 
+	 top: 1494px; 
+	 position: absolute; 
+	 width: 45px;
+	 height: 43px;
+	 z-index:32;
+} 
+
+ #item17vppenalties 
+{ 
+	 left: 686px; 
+	 top: 1495px; 
+	 position: absolute; 
+	 width: 46px;
+	 height: 42px;
+	 z-index:33;
+} 
+
+ #item17papreliminary 
+{ 
+	 left: 1082px; 
+	 top: 1494px; 
+	 position: absolute; 
+	 width: 47px;
+	 height: 44px;
+	 z-index:34;
+} 
+
+ #item17vptd 
+{ 
+	 left: 140px; 
+	 top: 1546px; 
+	 position: absolute; 
+	 width: 46px;
+	 height: 41px;
+	 z-index:35;
+} 
+
+ #item17paaccounts 
+{ 
+	 left: 1082px; 
+	 top: 1546px; 
+	 position: absolute; 
+	 width: 46px;
+	 height: 42px;
+	 z-index:36;
+} 
+
+ #item17vpitsi 
+{ 
+	 left: 140px; 
+	 top: 1597px; 
+	 position: absolute; 
+	 width: 46px;
+	 height: 45px;
+	 z-index:37;
+} 
+
+ #item17vpothers 
+{ 
+	 left: 140px; 
+	 top: 1693px; 
+	 position: absolute; 
+	 width: 47px;
+	 height: 45px;
+	 z-index:38;
+} 
+
+ #item17vpothers_specify 
+{ 
+	left: 457px;
+	top: 1663px; 
+	 position: absolute; 
+	width: 602px;
+	height: 73px;
+	 z-index:38;
+} 
+
+ #item18installment 
+{ 
+	 left: 1847px; 
+	 top: 1449px; 
+	 position: absolute; 
+	 width: 46px;
+	 height: 44px;
+	 z-index:39;
+} 
+
+ #item18numOfInstallme 
+{ 
+	 left: 1847px; 
+	 top: 1504px; 
+	 position: absolute; 
+	 width: 46px;
+	 height: 42px;
+	 z-index:40;
+} 
+
+ #item18partialpayment 
+{ 
+	 left: 1847px; 
+	 top: 1558px; 
+	 position: absolute; 
+	 width: 46px;
+	 height: 42px;
+	 z-index:41;
+} 
+
+ #item18fullPayment 
+{ 
+	 left: 1847px; 
+	 top: 1645px; 
+	 position: absolute; 
+	 width: 46px;
+	 height: 42px;
+	 z-index:42;
+} 
+
+ #item19 
+{ 
+	 left: 1583px; 
+	 top: 1850px; 
+	 position: absolute; 
+	 width: 663px;
+	 height: 87px;
+	 z-index:43;
+} 
+
+ #item20A 
+{ 
+	 left: 224px; 
+	 top: 1976px; 
+	 position: absolute; 
+	 width: 407px;
+	 height: 88px;
+	 z-index:44;
+} 
+
+ #item20B 
+{ 
+	 left: 688px; 
+	 top: 1979px; 
+	 position: absolute; 
+	 width: 407px;
+	 height: 84px;
+	 z-index:45;
+} 
+
+ #item20C 
+{ 
+	 left: 1160px; 
+	 top: 1979px; 
+	 position: absolute; 
+	 width: 358px;
+	 height: 84px;
+	 z-index:46;
+} 
+
+ #item20D 
+{ 
+	 left: 1583px; 
+	 top: 1973px; 
+	 position: absolute; 
+	 width: 666px;
+	 height: 88px;
+	 z-index:47;
+} 
+
+ #item21 
+{ 
+	 left: 1583px; 
+	 top: 2074px; 
+	 position: absolute; 
+	 width: 663px;
+	 height: 83px;
+	 z-index:48;
+} 
+
+ #item23 
+{ 
+	 left: 1558px; 
+	 top: 2976px; 
+	 position: absolute; 
+	 width: 690px;
+	 height: 81px;
+	 z-index:49;
+} 
+
+ #item24A 
+{ 
+	 left: 325px; 
+	 top: 3087px; 
+	 position: absolute; 
+	 width: 290px;
+	 height: 73px;
+	 z-index:50;
+} 
+
+ #item24B 
+{ 
+	 left: 698px; 
+	 top: 3088px; 
+	 position: absolute; 
+	 width: 261px;
+	 height: 72px;
+	 z-index:51;
+} 
+
+ #item24Cmonth 
+{ 
+	 left: 1070px; 
+	 top: 3085px; 
+	 position: absolute; 
+	 width: 97px;
+	 height: 75px;
+	 z-index:52;
+} 
+
+ #item24Cday 
+{ 
+	 left: 1172px; 
+	 top: 3085px; 
+	 position: absolute; 
+	 width: 103px;
+	 height: 75px;
+	 z-index:53;
+} 
+
+ #item24Cyear 
+{ 
+	 left: 1278px; 
+	 top: 3085px; 
+	 position: absolute; 
+	 width: 197px;
+	 height: 75px;
+	 z-index:54;
+} 
+
+ #item24D 
+{ 
+	 left: 1558px; 
+	 top: 3083px; 
+	 position: absolute; 
+	 width: 689px;
+	 height: 80px;
+	 z-index:55;
+} 
+
+ #item25A 
+{ 
+	 left: 698px; 
+	 top: 3199px; 
+	 position: absolute; 
+	 width: 262px;
+	 height: 75px;
+	 z-index:56;
+} 
+
+ #item25Bmonth 
+{ 
+	 left: 1070px; 
+	 top: 3199px; 
+	 position: absolute; 
+	 width: 99px;
+	 height: 72px;
+	 z-index:57;
+} 
+
+ #item25Bday 
+{ 
+	 left: 1173px; 
+	 top: 3199px; 
+	 position: absolute; 
+	 width: 100px;
+	 height: 72px;
+	 z-index:58;
+} 
+
+ #item25Byear 
+{ 
+	 left: 1277px; 
+	 top: 3199px; 
+	 position: absolute; 
+	 width: 199px;
+	 height: 72px;
+	 z-index:59;
+} 
+
+ #item25C 
+{ 
+	 left: 1559px; 
+	 top: 3193px; 
+	 position: absolute; 
+	 width: 688px;
+	 height: 81px;
+	 z-index:60;
+} 
+
+ #item26A 
+{ 
+	 left: 326px; 
+	 top: 3298px; 
+	 position: absolute; 
+	 width: 289px;
+	 height: 72px;
+	 z-index:61;
+} 
+
+ #item26B 
+{ 
+	 left: 698px; 
+	 top: 3298px; 
+	 position: absolute; 
+	 width: 262px;
+	 height: 72px;
+	 z-index:62;
+} 
+
+ #item26Cmonth 
+{ 
+	 left: 1070px; 
+	 top: 3295px; 
+	 position: absolute; 
+	 width: 98px;
+	 height: 75px;
+	 z-index:63;
+} 
+
+ #item26Cday 
+{ 
+	 left: 1172px; 
+	 top: 3295px; 
+	 position: absolute; 
+	 width: 103px;
+	 height: 75px;
+	 z-index:64;
+} 
+
+ #item26Cyear 
+{ 
+	 left: 1278px; 
+	 top: 3295px; 
+	 position: absolute; 
+	 width: 198px;
+	 height: 75px;
+	 z-index:65;
+} 
+
+ #item26D 
+{ 
+	 left: 1558px; 
+	 top: 3294px; 
+	 position: absolute; 
+	 width: 691px;
+	 height: 79px;
+	 z-index:66;
+} 
+
+/* item class */
+
+.item1{
+	width: 47px;
+	height: 42px;
+	background: transparent;
+	border:none;
+	text-align: center !important;
+	font-size: 34px !important;
+}
+
+.item2{
+	width: 100px;
+	height: 76px;
+	border: none;
+	background: transparent;
+	text-align: left !important;
+	font-size: 34px !important;
+	letter-spacing: 30px;
+	margin-left: 19px; 
+}

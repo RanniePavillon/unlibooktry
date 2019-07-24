@@ -1,0 +1,128 @@
+.headingspop	{
+    font-family: agency fb2;
+    color: #c51400;
+    font-weight: bold;
+	margin-top: 16px;
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 30px;
+}
+.addsavebuttonpop{
+	/* font-family: agency fb2;
+	font-size: 15px; */
+	font-family: verdana;
+	font-size: 13px;
+	font-weight: bold;
+	border-radius: 2px;
+	color: rgb(230, 230, 230);
+	-moz-border-radius: 30px;
+	background: rgb(28, 181, 239);
+	background: -moz-linear-gradient(90deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	background: -webkit-linear-gradient(90deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	background: -o-linear-gradient(90deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	background: -ms-linear-gradient(90deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	background: linear-gradient(0deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	-moz-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	border:none;
+}
+ #new1Client{
+	font-family: agency fb2;
+    color: #c51400;
+    font-weight: bold;
+	margin-top: 16px;
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	font-size: 30px;
+}
+.boxshadow{
+	border: 2px solid #A8574E;
+}
+.popheadings{
+	font-family: agency fb2;
+    color: #c51400;
+    font-weight: bold;
+	padding-bottom: 5px;
+	font-size: 30px;
+}
+.searchbutton{
+	width: 29px;
+    height: 30px;
+    border: none;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, verdana, sans-serif, tahoma;
+    cursor: pointer;
+    border: none;
+    color: whitesmoke;
+    background: none;
+    background-image: url('../images/searchback.png');
+    background-color: rgb(230, 250, 222);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 313px;
+    background-size: 100%;
+}
+.searchbuttonview{
+	width: 29px;
+    height: 30px;
+    border: none;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, verdana, sans-serif, tahoma;
+    cursor: pointer;
+    border: none;
+    color: whitesmoke;
+    background: none;
+    background-image: url('../images/searchback.png');
+    background-color: rgb(230, 250, 222);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 313px;
+    background-size: 100%;
+}
+.searchbutton2{
+	width: 35px;
+	height: 33px;
+	cursor: pointer;
+	border: none;
+	background-image: url('../images/searchback.png');
+	background-repeat: no-repeat;
+	border-radius: 2px 2px 2px 2px;
+	font-size: 14px;
+	font-family: Agency FB;
+	cursor: pointer;
+	border: solid 1px #c8c8c8;
+	background-color: rgb(230, 250, 222);
+	background-repeat: no-repeat;
+	margin-top:5px;
+	margin-left:-39px;
+	background-size: 100%;
+	opacity: -8;
+}
+.popx, .popx2{
+		cursor:pointer;
+		width: 29px;
+		display: block;
+		float: right;
+		background: transparent;
+		color: black;
+		border: none;
+		border-radius: 2px;
+		font-family: Arial black;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 16px;
+	}
+.saveButtonsPop{
+	width: 99px !important;
+    height: 31px !important;
+}
+.saveAddButtonsPop{
+	width: 154px !important;
+    height: 31px !important;
+}

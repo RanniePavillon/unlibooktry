@@ -1,0 +1,306 @@
+.addsavebuttonreports{
+	font-family: agency fb2;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 5px;
+	color: rgb(230, 230, 230);
+	-moz-border-radius: 30px;
+	background: rgb(28, 181, 239);
+	background: -moz-linear-gradient(90deg, rgb(172, 42, 27) 30%, rgb(197, 56, 40) 78%);
+	background: -webkit-linear-gradient(90deg, rgb(172, 42, 27) 30%, rgb(197, 56, 40) 78%);
+	background: -o-linear-gradient(90deg, rgb(172, 42, 27) 30%, rgb(197, 56, 40) 78%);
+	background: -ms-linear-gradient(90deg, rgb(172, 42, 27) 30%, rgb(197, 56, 40) 78%);
+	background: linear-gradient(0deg, rgb(172, 42, 27) 30%, rgb(197, 56, 40) 78%);
+	-moz-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	border:none;
+	width: 100px;
+	height: 28px;
+}
+.reportTitle {
+    font-size: 24px;
+    font-family: agency fb2!important;
+    color: #183867;
+    float: left;
+}
+.reportTitle {
+	font-size:24px;
+	font-family:agency fb2!important;
+	color: #c51400;
+	float:left;
+}
+.grayBg{
+	background:#c8c8c8;
+	font-weight:bold;
+}
+.reportcolor{
+	font-family:verdana;
+	color: #c51400;
+	font-size:12px;
+}
+.lineDivider{
+	height: 3px;
+    width: 737px;
+    background: #BE3323;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: -15px;
+}
+
+.DFs{
+	margin-top: 10px;
+	font-size: 12px;
+	font-family: verdana;
+	border-radius: 10px;
+	float: left;
+}
+.exportButton{
+	margin-left: 2px;
+}
+.selectMonth{
+	width: 133px;
+	height: 27px;
+	font-size: 12px;
+	font-family: Verdana;
+	padding-left: 5px;
+	box-shadow: none;
+	border: 1px solid gray;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 2px;
+	outline-style:none;
+}
+.selectYear::-webkit-inner-spin-button{
+	background-color:#c8c8c8;
+	height:21px; 
+}	
+.selectYear{
+	width: 69px;
+	height: 27px;
+	font-family: Verdana;
+	font-size: 12px;
+	padding-left: 5px;
+	border: 1px solid gray;
+	border-radius: 2px;
+	outline-style:none;
+	margin-left:5px;
+}
+.monthlyExpensesCont {
+    width: 720px;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-family: Agency FB;
+    font-size: 19px;
+    color: #183867;
+}
+.loadingHolder{
+	margin:auto;
+	margin-top:300px;
+}
+.loadingimg{
+	width:30px;
+	height:30px;
+}
+.viewMode{
+	float:left;
+}                                                                                               
+.FSPrint{
+	margin-left:5px;
+}
+.fromReg{
+	font-family: verdana;
+	width:688px;
+	margin:auto;
+	text-align: center;
+	height:auto!important;
+	margin-top: 20px;
+}
+.reportHolderOR{
+	width: 720px;
+	height:1425px;
+	box-shadow: 2px 2px 15px #3A3434;
+	padding-top: 10px;
+	margin-left:9px;
+	overflow: scroll;
+	padding-bottom:20px;
+	float:left;
+}
+.balanceTitle{
+	font-family: Verdana;
+	font-size: 12px;
+}
+.nameText{
+	font-size:14px;
+	font-family:Verdana;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.ORCompanyInfo{
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Verdana;
+}
+.buttonFS{
+	float:right;
+	margin-top: 4px;
+	margin-right:5px;
+}
+.FSGen {
+	margin-left: 10px;
+}
+
+.noOutsanding{
+	font-weight: bold;
+	color: #BE3323;
+	font-family: Verdana;
+	font-size: 14px;
+	text-align: center;
+}
+.monthlyExpensesContbilling{
+	width: 720px;
+	margin-top: 10px;
+	margin-left: 15px;
+	font-family: Agency FB;
+	font-size: 19px;
+	color: #183867;
+}
+.tblCRB{
+	margin-top:20px;
+	border-collapse:collapse;
+	font-family:Verdana;
+	font-size:12px;
+	width:100%;
+}
+.tblCRB th{
+	background:#BE3323;
+	color:#fff;
+	padding:2px;
+	border:1px solid gray;
+}
+.tblCRB tr td{
+	border:1px solid gray;
+	padding:5px;
+	font-size:12px;
+}
+.textRight{
+	text-align:right;
+}
+.textLeft{
+	text-align:left;
+}
+.tdTotal{
+	background:#BE3323;
+	color:#fff;
+	font-size:12px!important;
+	font-weight:bold;
+}
+.inpAddressSumBill{
+	width:310px;
+	word-break: break-word;
+	border: none;
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 5px;
+	font-family:Verdana;
+	font-size:12px;
+	margin-left:187px;
+}
+
+.noclass{
+	text-align: center;
+	font-family: Verdana;
+	font-size: 14px;
+	color: #BE3323;
+	font-weight: bold;
+	margin-top:80px;
+}
+.inpAddressCdbNew{
+	width:310px;
+	word-break: break-word;
+	border: none;
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 5px;
+	font-family:Verdana;
+	font-size:12px;
+	margin-left:245px;
+}
+.tblCRBjournal{
+	margin-top:20px;
+	border-collapse:collapse;
+	font-family:Verdana;
+	font-size:12px;
+	width:100%;
+}
+.tblCRBjournal th{
+	background:#BE3323;
+	color:#fff;
+	padding:2px;
+	border:1px solid gray;
+	text-align:left;
+}
+.tblCRBjournal tr td{
+	border:1px solid gray;
+	padding:5px;
+	font-size:12px;
+}
+.inpAddressJournal{
+	width:310px;
+	word-break: break-word;
+	border: none;
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 5px;
+	font-family:Verdana;
+	font-size:12px;
+	margin-left:185px;
+}
+.tblShowReport th{
+	border:1px solid gray;
+	font-size:12px;
+	font-weight:bold;
+	background:#BE3323 !important;
+	padding:6px;
+	color:#fff;
+	text-align:left;
+}
+.textRight{
+	text-align:right;
+}
+.textLeft{
+	text-align:left;
+}
+.textCenter{
+	text-align:center;
+}
+.ButInput{
+	width: 133px;
+    height: 27px;
+    font-size: 13px;
+    font-family: Verdana;
+    padding-left: 5px;
+    box-shadow: none;
+    border-radius: 2px;
+    border: 1px solid gray;
+    margin-left: 5px;
+    margin-right: 5px;
+    outline-style: none;
+}
+
+.ButInputtask{
+	width: 133px;
+    height: 27px;
+    font-size: 13px;
+    font-family: Verdana;
+    padding-left: 5px;
+    box-shadow: none;
+    border-radius: 2px;
+    border: 1px solid gray;
+    margin-left: 5px;
+    margin-right: 5px;
+    outline-style: none;
+}
+
+.tblShowReport tr td{
+	font-family:verdana;
+	font-size:12px;
+}

@@ -1,0 +1,51 @@
+ 
+.loadingevent{
+		  background-color: none;
+		  width: 108px;
+		  height: 74px;
+		  margin: auto;
+		  margin-top: 218px;
+		  padding: 10px;
+	}
+	
+ 
+.loadingevent2{
+		background-color: none;
+		  width: 108px;
+		  height: 74px;
+		  margin: auto;
+		  margin-top: 218px;
+		  padding: 10px;
+	}
+.loadingimg{
+	width: 50px !important;
+	height: 50px !important;
+}
+.loadingimgload{
+	width:300px;
+	height:54px;
+}
+.loadingevent2load{
+		  background-color: #fff;
+		  border: solid 1px #5B9BC9;
+		  color: red;
+		  width: 300px;
+		  height: 52px;
+		  margin: auto;
+		  margin-top: 60px;
+		  padding: 10px;
+	}
+.loadingeventreport{
+	  width: 120px;
+	  margin: auto;
+	  margin-top: 10px;
+}
+.loadingreport{
+	width: 173px;
+	height: 58px;
+}
+.loadingreportform{
+	  width: 250px;
+	  height: 99px;
+	  margin-top: 20px;
+}

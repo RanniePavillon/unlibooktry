@@ -1,0 +1,33 @@
+@media print { 
+	.reportForm { 
+		border:none !important;
+	}
+	.reportContainer{
+		box-shadow:none !important;
+	}
+	.reportHolderORcdb{
+		overflow:hidden !important;
+		box-shadow:none !important; 
+		border:none !important;
+		height:auto !important;
+		zoom:100% !important;
+		
+	}
+	.cashDisbrsement_holder{
+		margin-left:15px;
+	}
+	.tblCRB{
+		zoom:100% !important;
+	}
+	.tblCRB th{
+		color:#000 !important;
+	}
+	.tdTotal, .tdTotal2{
+		color:#000 !important;
+	}
+	
+}
+@page {
+    size: 8" x 13" landscape;
+	margin:0.29in 0.44in 0.44in 0.29in;
+}

@@ -1,0 +1,37 @@
+@media print { 
+	.top, #container, .hrdashreport, .listType, .fsReport, #accpClickToOpen, .listForm, .BSText, .incomestate,.buttonFSbalanceTB,
+	.outstanding_button,.DFs, .cr_button, .buttonFSbalanceBS, .monthlyExpensesCont, .DFs, .buttonFS, .mainformitemsum {
+		display:none !important;
+	}
+	
+	.reportForm { 
+		border:none !important;
+	}
+	.reportHolderORcrb{
+		overflow:hidden !important;
+		box-shadow:none !important; 
+		border:none !important;
+		height:auto !important;
+		zoom:100% !important;
+	}
+	.fromReg{
+		margin-left:0px !important;
+	}
+	.tblCrbNew th{
+		color:#000 !important;
+	}
+	.tdTotal, .tdTotal2{
+		color:#000 !important;
+	}
+	.tblCRB{
+		zoom:99% !important;
+		margin-left:20px !important;
+	}
+	.crbNew{
+		margin-left:100px;
+	}
+}
+@page {
+    size: 8" x 13" landscape;
+	margin:0.29in 0.44in 0.44in 0.29in;
+}

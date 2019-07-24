@@ -1,0 +1,599 @@
+.popBack{
+    background: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(1, 1, 1, 0.3);
+    overflow:auto;
+}
+.popback:parent{
+    overflow:hidden;
+}
+.invoiceHolderInvoicePrint{
+    width: 100%;
+    margin-top: 50px;
+    margin: auto;
+    margin-bottom:30px;
+}
+.PaymentTypeFormInvoice{
+    width: 805px;
+    margin: auto;
+    background-color: white;
+    padding-bottom:10px;
+    margin-top:30px;
+}
+.newInvoiceprint{
+    font-family: Tahoma;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 85px;
+    height: 27px;
+    border: 1px solid rgb(139, 138, 138);
+    width: 773px;
+    text-align: center;
+    font-style:normal;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+
+.niInvoice{
+    font-size: 30px;
+}
+.clogo{
+	width:100% !important;
+    margin-left: 10px;
+    font-size: 12px;
+    font-family: Tahoma;
+    text-shadow: none;
+}
+.clogoup{
+	float:left !important;
+    padding-left: 5px;
+	width:250px !important;
+    margin-top:0px !important;
+    margin-left:6px !important;
+    font-size: 13px !important;
+    font-family: Verdana;
+    font-weight: bold;
+    text-shadow: none;
+    color: #000000;
+}
+.clogoAdd{
+    margin-left: 157px;
+    width: 50px;
+    font-size: 12px;
+    font-family: Tahoma;
+    text-shadow: none;
+    font-weight: none;
+}
+.clogoAdd2{
+    margin-left: 157px;
+    width: 200px;
+    font-size: 12px;
+    font-family: Tahoma;
+    text-shadow: none;
+    font-weight: none;	
+}
+.invoicetr{
+    font-size: 12px;
+    font-family: Tahoma;
+    text-shadow: none;
+}
+.tbleInvoice{
+    margin-top: 15px;
+    margin-left: 15px;
+    width:96%;
+}
+.tbleInvoice td{
+    font-weight:normal;
+    padding:3px;
+    font-size: 12px;
+    font-family: Tahoma;
+}
+.inputboxInvoiceTxt{
+    height: 100%;
+    margin-top: 0px;
+    font-size: 12px;
+    font-family: Tahoma;
+    border: none;
+    width:100%;
+    padding:0px;
+}
+.inputboxInvoiceTxtIN{
+    /* height: 20px; */
+    margin-top: 0px;
+    font-size: 12px;
+    font-family: Tahoma;
+    border: none;
+    width:100%;
+    height:100%;
+    padding:0px;
+}
+.inputboxInvoiceTxtID{
+    height: 20px;
+    margin-top: -1px;
+    font-size: 12px;
+    font-family: Tahoma;
+    margin-left: -18px;
+    border: none;
+    margin:70px;
+}
+.inputboxInvoiceTxtDD{
+    height: 20px;
+    margin-top: -1px;
+    font-size: 12px;
+    font-family: Tahoma;
+    margin-left: -35px;
+    border: none;
+}
+.inputboxInvoiceTxtSO{
+    height: 20px;
+    margin-top: -1px;
+    font-size: 12px;
+    font-family: Tahoma;
+    margin-left: -35px;
+    border: none;
+}
+.inputboxInvoiceTxtDIS{
+    height: 20px;
+    margin-top: -1px;
+    font-size: 12px;
+    font-family: Tahoma;
+    margin-left: -35px;
+    border: none;
+}
+.particularInvoice{
+    padding-top:35px;
+}
+.inputboxInvoiceTxt2 {
+    margin-top: 1px;
+    font-family: Tahoma;
+    font-size: 12px;
+    border: none;
+    width:100%;
+}
+.inputboxInvoiceTxtParticular{
+    margin-top: 35px;
+    font-family: Tahoma;
+    font-size: 12px;
+    border: none;
+    width:100%;
+}
+.tbl2Invoice{
+    margin-top: -82px;
+    margin-left: 602px;
+    border-collapse: collapse;
+}
+.tbl2Invoice td{
+    width:164px;
+    padding:3px;
+    font-family: Tahoma;
+    font-size: 12px;	
+}
+.tblInvoice2print{
+    border: 1px solid rgb(116, 115, 115);
+    margin-top: 15px;
+    padding-bottom: 30px;
+    margin: auto;
+    width: 773px;
+}
+.newTblInv{
+    border-spacing: 0px;
+}
+.tblInvoicepaddingbottom td{
+    padding-bottom:30px;
+}
+.tblInvoice2print, th{
+
+}
+.tblInvoice2print th{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;	
+    color: black;
+    font-size: 12px;
+    font-family:tahoma;
+    font-weight: bold;
+    background-color: #C8C8C8;
+    padding: 5px;
+    text-align: left;
+    border-spacing: 0px;
+}
+.tblInvoice2print td{
+    color: black;
+    font-size: 12px;
+    font-family:tahoma;
+    font-weight: normal;
+    padding: 5px;
+}
+.thInvoiceNew{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;	
+    font-color: black;
+    font-size: 14px;
+    font-family: Tahoma;
+    font-weight: bold;
+    background-color: #C8C8C8;
+    padding-left: 5px;
+}
+.thInvoiceNew2{
+    border-bottom: 1px solid black;
+    font-color: black;
+    font-size: 14px;
+    font-family: Tahoma;
+    font-weight: bold;
+    background-color: #C8C8C8;
+    text-align: right;
+    padding-right: 5px;
+}
+.thInvoiceNew3{
+    border-bottom: 1px solid black;
+    font-color: black;
+    font-size: 14px;
+    font-family: Tahoma;
+    font-weight: bold;
+    background-color: #C8C8C8;
+    border-right: 1px solid black;	
+    text-align: center;
+    width: 888px;
+}
+.thInvoiceNew5{
+    border-bottom: 1px solid black;
+    font-color: black;
+    font-size: 14px;
+    font-family: Tahoma;
+    font-weight: bold;
+    background-color: #C8C8C8;
+    border-right: 1px solid black;	
+    text-align: center;
+}
+.thInvoiceNew4{
+    border-bottom: 1px solid black;
+    font-color: black;
+    font-size: 14px;
+    font-family: Tahoma;
+    font-weight: bold;
+    background-color: #C8C8C8;
+    border-right: 1px solid black;	
+    text-align: right;
+    padding-right: 5px;
+}
+.boarderNew{
+    background-color: white;
+    font-weight: none;
+    padding-left: 5px;
+    font-size: 12px;
+    font-family: Tahoma;
+    padding-top: 5px;
+}
+.boarderNew2{
+    background-color: white;
+    font-weight: none;
+    padding-left: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Tahoma;
+    padding-top: 5px;
+}
+.boarderNew3{
+    background-color: white;
+    font-weight: none;
+    padding-right: 5px;
+    text-align: right;
+    font-size: 12px;
+    font-family: Tahoma;
+    padding-top: 5px;
+}
+.tbl2Invoice2{
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding-bottom: 30px;
+    font-size: 12px;
+    font-family:Tahoma;
+    width: 96.1%;
+}
+/* .tbl2Invoice2, tr th{
+    text-align: left;
+    border-spacing: 0px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;	
+    font-color: black;
+    font-size: 14px;
+    font-family: Tahoma;
+    font-weight: bold;
+    background-color: #C8C8C8;
+    padding-left: 5px;
+    width: 19.3%;
+} */
+.tbl3Invoice2{
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    margin-left: 488px;
+    width: 301px;
+    border-collapse: collapse;
+
+}
+.SAInvoice{
+    text-align: left;
+    padding-left: 5px;
+    font-size: 12px;
+    font-family: Tahoma;
+}
+.SAInvoice2{
+    text-align: left;
+    font-size: 12px;
+    font-family: Tahoma;
+    padding:5px;
+}
+.SAInvoice3{
+    text-align: left;
+    padding-left: 5px;
+    font-size: 12px;
+    font-family: Tahoma;
+    padding-top: -5px;
+    font-weight: bold;
+}
+.inputTotalInvoice{
+    width: 100%;
+    text-align: right;
+    font-size: 12px;
+    font-family: Tahoma;
+    border: none;
+    padding-right: 3px;
+}
+.inputTotalInvoice2{
+    width: 100%;
+    text-align: right;
+    font-size: 12px;
+    font-family: Tahoma;
+    border: none;
+    padding-right: 3px;
+}
+.inputTotalInvoice3{
+    width: 100%;
+    text-align: right;
+    padding-right: 3px;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Tahoma;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: none;
+    background-color: #c8c8c8;
+    margin-top:-1px;
+}
+.trTotalInvoices{
+    margin-top: -5px;
+}
+.trTotalInvoicesGr{
+    margin-top: -5px;
+    background-color: #c8c8c8;
+    border-spacing: 0px;
+}
+.RemarksInvoice{
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: none;
+    font-family: Tahoma;
+}
+.RemarkText{
+	height:auto !important;
+    margin-left: 15px;
+    width: 763px !important;
+    margin-bottom: 10px !important;
+    margin-top: 10px;
+    font-family:tahoma;
+    font-size:12px;
+    padding:5px;
+	border:none !important;
+}
+.closePrint{
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    float: right;
+    margin-right: 7px;
+    margin-top: 7px;
+    /* background: none; */
+    height: 22px;
+    width: 23px;
+}
+.tblInvoice2print tr th:nth-child(2){
+    text-align: center;
+}
+.tblInvoice2print tr th:nth-child(4){
+    text-align: right;
+}
+.tblInvoice2print tr th:nth-child(5){
+    text-align: right;
+}
+.tblInvoice2print tr td:nth-child(2){
+    text-align: center;
+}
+.tblInvoice2print tr td:nth-child(4){
+    text-align: right;
+}
+.tblInvoice2print tr td:nth-child(5){
+    text-align: right;
+}
+
+.tblInvoice2Item{
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding-bottom: 30px;
+    width: 96.1%;
+}
+.newTblInv{
+    border-spacing: 0px;
+}
+
+.tblInvoice2Item, th{
+    text-align: left;
+    border-spacing: 0px;
+    margin: auto;
+    margin-top: 15px;
+    width: 773px;
+}
+.tblInvoice2Item th{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;	
+    color: black;
+    font-size: 12px;
+    font-family: tahoma;
+    font-weight: bold;
+    background-color: #C8C8C8;
+    padding-right: 5px;
+    width: 19.3%;
+}
+.tblInvoice2Item td{
+    font-family: tahoma;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.tblInvoice2Item tr th:nth-child(2){
+    text-align: center;
+}
+.tblInvoice2Item tr th:nth-child(4){
+    text-align: right;
+    padding:5px;
+}
+.tblInvoice2Item tr th:nth-child(5){
+    text-align: right;
+}
+.tblInvoice2Item tr td:nth-child(2){
+    text-align: center;
+}
+.tblInvoice2Item tr td:nth-child(4){
+    text-align: right;
+}
+.tblInvoice2Item tr td:nth-child(5){
+    text-align: right;
+}
+.scplogoclass{
+    width: 114px;
+    height: 63px;
+    margin-top:-17px;
+}
+.addressLogo{
+    color:#000000;
+    font-size:12px;
+    font-family:Arial, Helvetica, verdana, sans-serif, tahoma;
+    font-weight:normal;
+}
+.pdf{
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 10px 3px 10px;
+    margin-left:0px !important;
+    margin-top: 0px !important;
+    font-family: calibri;
+    font-weight: bold;
+    width: 55px;
+    height: 25px;
+	margin-right:5px !important;
+}
+.pdf2{
+    border: none;
+    border-radius: 3px;
+    padding: 3px 10px 3px 10px;
+    font-family: calibri;
+    font-weight: bold;
+    width: 62px;
+    height: 25px;
+    margin-right: 0px !important;
+    margin-top:0px !important;
+    color:#fff;
+}
+
+@media print {
+    .mainbodyInvoice, #container, .mainBody, #footer, input[type=button] {
+        display: none;
+    }
+    .Main{
+        background: none;
+        margin:auto;
+        border:none;
+    }
+    .invoiceHolderNewInvoiceForm {
+        display:none !important;
+    }
+    .boxshadowprint{
+        border:none !important;
+        box-shadow:none !important;
+    }
+    .PaymentTypeFormInvoice{
+        margin-top:30px;
+        border:none !important;
+        border-shadow:none;
+        width: 805px;
+    }
+    .popBack{
+        width:900px;
+        margin:auto;
+        overflow: hidden;
+        position: static;
+        background-color: #fff;
+        border:none !important;
+        border-shadow:none !important;
+    }
+
+    @page {
+        size: portrait;
+        margin:auto;
+        margin: 5px;
+        margin-top:100px;
+        border:none;
+
+    }
+    thead   {display: table-header-group;   }
+
+    tfoot   {display: table-footer-group;   }
+
+
+    @media screen{
+        thead   {display: table-header-group;   }
+
+        tfoot   {display: table-footer-group;   }
+    }
+
+
+}
+.rateinvoice{
+    font-size: 12px;
+    font-family:tahoma;
+}
+.paidInvoice{
+    width:295px;
+    height:121px;
+}
+.img2 {
+    position: absolute;
+    margin-left: 28px;
+    height: 17px;
+    z-index: -1;
+    top: 209px;
+}
+.buttonholder{
+
+}
+.boxshadowprint {
+    border: solid 1px #25b5ef;
+    box-shadow: 0px 1px 2px 2px gray;
+}
+.BCcomment{
+	margin-left: 15px;
+	padding-top: 7px;
+	font-size: 12px;
+	font-family: verdana;
+	padding-bottom: 5px;
+}

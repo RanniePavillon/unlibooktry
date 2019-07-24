@@ -1,0 +1,18 @@
+@media print{
+	.reportHolderOR{
+		width:100%;
+		overflow:hidden !important;
+		box-shadow:none !important;
+		border:none !important;
+		zoom:95% !important;
+		height:auto !important;
+		margin-left:20px !important;
+	}
+	.fromReg{
+		margin-left:15px !important;
+	}
+}
+@page {
+    size: 8" x 13";
+	margin:0.29in 0.44in 0.44in 0.29in;
+}

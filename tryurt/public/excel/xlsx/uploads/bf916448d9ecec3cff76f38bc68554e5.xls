@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Version>12.00</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10005</WindowHeight>
+  <WindowWidth>10005</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>135</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="12" ss:ExpandedRowCount="2" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:Width="73.5"/>
+   <Column ss:Width="63"/>
+   <Column ss:Width="38.25"/>
+   <Column ss:Width="71.25"/>
+   <Column ss:Width="42.75"/>
+   <Column ss:Width="35.25"/>
+   <Column ss:Width="39.75"/>
+   <Column ss:Width="87"/>
+   <Column ss:Width="71.25"/>
+   <Column ss:Width="59.25"/>
+   <Column ss:Width="115.5"/>
+   <Column ss:Width="34.5"/>
+   <Row>
+    <Cell><Data ss:Type="String">Client Account</Data></Cell>
+    <Cell><Data ss:Type="String">Client Name</Data></Cell>
+    <Cell><Data ss:Type="String">Tin No.</Data></Cell>
+    <Cell><Data ss:Type="String">Email Address</Data></Cell>
+    <Cell><Data ss:Type="String">Address</Data></Cell>
+    <Cell><Data ss:Type="String">Phone</Data></Cell>
+    <Cell><Data ss:Type="String">Fax No.</Data></Cell>
+    <Cell><Data ss:Type="String">Currency Account</Data></Cell>
+    <Cell><Data ss:Type="String">Contact Name</Data></Cell>
+    <Cell><Data ss:Type="String">Contact No.</Data></Cell>
+    <Cell><Data ss:Type="String">Email Address</Data></Cell>
+    <Cell><Data ss:Type="String">Active</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">client_00003</Data></Cell>
+    <Cell><Data ss:Type="String">Client Name</Data></Cell>
+    <Cell><Data ss:Type="String">Tin No.</Data></Cell>
+    <Cell><Data ss:Type="String">Email Address</Data></Cell>
+    <Cell><Data ss:Type="String">Address</Data></Cell>
+    <Cell><Data ss:Type="String">Phone</Data></Cell>
+    <Cell><Data ss:Type="String">Fax No.</Data></Cell>
+    <Cell><Data ss:Type="String">Currency Account</Data></Cell>
+    <Cell><Data ss:Type="String">Contact Name</Data></Cell>
+    <Cell><Data ss:Type="String">Contact No.</Data></Cell>
+    <Cell><Data ss:Type="String">vdmetran@scp-ph.com</Data></Cell>
+    <Cell><Data ss:Type="String">yes</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>2</ActiveRow>
+     <ActiveCol>11</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

@@ -1,0 +1,74 @@
+.monthlyExpensesCont, .auditTrialCont{
+	width:720px !important;
+	margin: auto !important;
+}
+.bs_mainContainer{
+	width:100%;
+	margin: auto !important;
+	border: 2px solid black;
+}
+.lineDivider{
+	/* margin-left: 0px !important; */
+}
+.DFs{
+	width:100% !important;
+}
+.reportHolderContainer {
+	width:720px !important;
+	margin:auto!important;
+}
+@font-face {
+	font-family: 'agency fb'; /*a name to be used later*/
+	src: url('../../public/fonts/AGENCYR.ttf'); /*URL to font*/
+}
+
+@font-face {
+	font-family: 'agency fb2'; /*a name to be used later*/
+	src: url('../../public/fonts/AGENCYB.ttf'); /*URL to font*/
+}/* 
+.FSGen {
+	margin-right:128px!important;
+} */
+.mainformitemsum{
+	width:720px !important;
+	margin: auto !important;
+}
+.BSForm{
+	width:720px!important;
+	margin:auto!important;
+}
+.form1601cHolderForm{
+	width:720px !important;
+	margin: auto !important;
+}
+.buttonbelow{
+	margin-right:120px!important;
+}
+.buttonHolder {
+	margin-right:0px!important;
+}
+.form1601eHolderForm{
+	width:720px !important;
+	margin: auto !important;
+}
+.form2550mHolderForm{
+	width:720px !important;
+	margin: auto !important;
+}
+.form2550qHolderForm{
+	width:720px !important;
+	margin: auto !important;
+}
+.form1701HolderForm{
+	width:720px !important;
+	margin: auto !important;
+}
+.viewButton{
+	/* margin-right:0px!important; */
+}
+.generatediv{
+	margin-right:13px!important;
+}
+.fromReg{
+	margin-left:0px!important;
+}
