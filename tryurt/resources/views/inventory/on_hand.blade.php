@@ -1,5 +1,15 @@
-        @include('layouts.header')
+@include('layouts.header')
+@extends('layouts.footer')
 <style>
+    .container {
+    background-color: white;
+    max-width: 1000px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    }s
     .cnitableAllInvoice{
         border-collapse:collapse;
         width: 99%;
@@ -337,77 +347,100 @@
     .buttonHover:hover{
         color:#B13C56;
     }
-</style>
+/* 
 <!-- </?php
 $page = isset($_GET['ipp']) ? (($_GET['ipp'] == "All") ? '' : ($_GET['page'])) : 1;
 $ipp = isset($_GET['ipp']) ? (($_GET['ipp'] == "All") ? '' : $_GET['ipp']) : 25;
-?> -->
+?> --> */
+
+    .link-selected{
+        color:maroon;
+    }
+	#lowerLink2{
+		margin-left:50px;
+	}
+
+    .hrlink{
+        margin-left:380px;
+        width: 770px;
+    }
+
+</style>
+
+<!-- </?php
+    $subLink = '';
+    if(Session::getSession('UB_SUBDOMAINS'))
+    {
+        $subLink = Session::getSession('UB_SUBDOMAINS').'/';
+    }
+?>  -->
+
+
 <title>
     INVENTORY ON HAND
 </title>
+
 <link rel="stylesheet" href="{{asset('css/overall.css')}}"/>
-<div class="mainbodyInvoice footerHeight">
-    <form method='post' action="{{('inventory')}}" id='form'>
+<!-- <div class="mainbodyInvoice footerHeight"> -->
+    <div class="container">
+    <form method='post' action="{{('/inventory/on_hand')}}"id='form'>
         <div class="invoiceHolderInvoice">
             <div id="newInvoice" class="headings">
                 <label class="headText">INVENTORY ON HAND</label>
             </div>	
-            
+
             <div style="clear:both;"></div>
             <div class="center2">
                 <div id="search3" style="float:left;margin-top:15px;">
-                        <input type="checkbox" class="showWarehouse" value=""><label class="buttoninvoices">SHOW WAREHOUSE</label>
-                    </div>
-                    
-                    
+                    <input type="checkbox" class="showWarehouse" value=""><label class="buttoninvoices">SHOW WAREHOUSE</label>
+                </div>
+
+                <!-- </?php $searchby = isset($_POST['searchby']) ? $_POST['searchby'] : ''; ?> -->
                 <div style="float:right;margin-right:30px;margin-top:4px;">
-                        <span class="filteredby">Filtered By:</span>
-                        <label class="labelclass">	
-                            <select class="inumber" name="searchby" id="searchby">
-                                <option class="invNoOption" value="1" >Item NO.</option>
-                                <option class="invNoOption" value="2" >Description</option>
-                            </select>
-                        </label>
-                        <input type="search" name="search" placeholder="SEARCH" class="searchindex
-                        " value=""> 
-<!--                         
-                        <input type="text" name="startdate" value="" 
-                        placeholder="From Date" class="date dateInputText hasDate " style="width:104px;height: 29px;"/>
-                        
-                        <input type="text" name="enddate" value=""
+                    <span class="filteredby">Filtered By:</span>
+                    <label class="labelclass">	
+                        <select class="inumber" name="searchby" id="searchby">
+                            <option class="invNoOption" value="1">Item NO.</option>
+                            <option class="invNoOption" value="2">Description</option>
+                        </select>
+                    </label>
+                    <input type="search" name="search" placeholder="SEARCH" class="searchindex"value=""> 
+
+                    <!-- <input type="text" name="startdate" value="" 
+                           placeholder="From Date" class="date dateInputText hasDate" style="width:104px;height: 29px;"/>
+
+                    <input type="text" name="enddate" value=""
                            placeholder="To Date" class="date dateInputText hasDate" style="width:104px;height: 29px;"/>
 
-                    <input type="submit" name="search2" value="SEARCH" class="search2"> -->
+                    <input type="submit" name="search2" value="SEARCH" class="search2 "> -->
 
-                    <div><input type="submit" name="search2" value="" class="search2Col" style="margin-left:331px;"></div>
+                    <div><input type="submit" name="search2" value="" class="search2Col " style="margin-left:331px;"></div>
                 </div>
                 <div style="clear:both;"></div>
             </div>
         </div>
         <div class="moduleHeight">
-           
+            <!-- </?php $sortdirection = isset($_POST['sortdirection']) ? $_POST['sortdirection'] : '' ?> -->
             <table class="cnitableAllInvoice">
                 <tr class="cnitableAllInvoiceTr" id="hoverTr">
                     <th style="text-align:center; width:3%"><!-- <input type="checkbox" class='toggle' > --></th>
-                    <th style="text-align:left;padding:5px;padding-left: 5px;width:11%;"><a onclick="sort('invoice)">Item No.</a></th>
+                    <th style="text-align:left;padding:5px;padding-left: 5px;width:11%;"><a onclick="sort('invoice', ' ($sortdirection == '') ? '' : '' ')">Item No.</a></th>
                     <th style="text-align:left;padding-left: 5px;width:20%;">Item Description</th>
                     <th class="warehouse hidden" style="text-align:left;padding-left: 5px;width:10%;">UOM</th>
                     <th style="text-align:left;padding-left: 5px;width:10%;" class="warehouse hidden">WAREHOUSE</th>
                     <th style="text-align:left;padding-right:5px;width:11%;">Available Qty</th>
                 </tr>
 
-               
+                <!-- </?php foreach ($this->data as $item) { ?> -->
                     <tr class="tablecni" id="hoverTr">
-                        <td style="text-align:center;" class=""><input type="checkbox" name='chk[]' class='chk' value="
-                        "></td>
-                        <td style="text-align:left;padding-left: 5px;" class=""><a href="{{('Inventory/itemTransaction')}}" target="_blank"></a></td>
+                        <!-- <td style="text-align:center;" class=""><input type="checkbox" name='chk[]' class='chk' value=""></td>
+                        <td style="text-align:left;padding-left: 5px;" class=""><a href="{{('Inventory/itemTransaction')}}?itemid=&warehouseid=" target="_blank"></a></td>
                         <td style="text-align:left;padding-left: 5px;" class=""></td>
                         <td style="text-align:left;padding-left: 5px;" class="warehouse hidden"></td>
                         <td style="text-align:left;padding-left: 5px;" class="warehouse hidden"></td>
-                        <td style="text-align:left;padding-right: 5px;"></td>
+                        <td style="text-align:left;padding-right: 5px;"></td> -->
                     </tr>
-               
-
+              
             </table>
 
         </div>
@@ -418,7 +451,7 @@ $ipp = isset($_GET['ipp']) ? (($_GET['ipp'] == "All") ? '' : $_GET['ipp']) : 25;
 
         <table class="tfootTable">
             <tfoot>
-                <tr class="under">
+                <tr cl  ass="under">
                     <td colspan="5" style="font-family:Verdana;font-size:11px;color:#fff;font-weight:bold;text-align: center" class="under">
                         <!-- </?php
                         echo "<span style=\"margin-left:25px\width:120px\"> " . $this->pages->display_jump_menu()

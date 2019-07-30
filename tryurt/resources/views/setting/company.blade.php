@@ -540,7 +540,7 @@
         });
 
     });
-</script> -->
+</script> 
 <!-- </?php
 $info = $this->orgInfo;
 $org = $this->org;
@@ -549,7 +549,7 @@ $code = array();
 ?>
 <script>
     code = new Array();
-<!-- </?php
+ </?php
 foreach ($rdo as $each) {
     ?>
         code.push('</?= $each->code ?>');
@@ -826,3 +826,5 @@ foreach ($rdo as $each) {
         return re.test(email);
     }
 </script> -->
+
+@extends('layouts.footer')

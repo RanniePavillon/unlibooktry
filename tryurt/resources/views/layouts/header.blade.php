@@ -40,62 +40,68 @@ else
 }
 ?> -->
 <html>
-    <!-- <head> </?php
+<!-- <head> </?php
         $cl = strtolower(Session::getSession('class'));
         $fc = Session::getSession('function');
         ?> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="shortcut icon" href="{{asset('images/ubServices_titleLogo.png')}}">
+<link rel="stylesheet" href="{{asset('css/default.css')}}" />
+<link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}" />
+<link rel="stylesheet" href="{{asset('css/datepicker.css')}}" />
+<link href="{{asset('css/ajax.css')}}" rel="stylesheet" type="text/css')}}">
+<link rel="stylesheet" href="{{asset('pixeden/pe-icon-7-stroke/css/pe-icon-7-stroke.css')}}">
+<link rel="stylesheet" href="{{asset('pixeden/pe-icon-7-stroke/css/helper.css')}}">
+<!-- <link rel="stylesheet" type="text/css" href="{{asset('datable/datatables.min.css')}}"> -->
 
-        <meta http-equiv="content-type" content="text/html;charset=utf-8">
-        <link rel="shortcut icon" href="{{asset('images/ubServices_titleLogo.png')}}">
-        <link rel="stylesheet" href="{{asset('css/default.css')}}"/>
-        <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}"/>
-                <!--<link rel="stylesheet" href="{{asset('css/datepicker.css')}}"/>-->
-        <link href="{{asset('css/ajax.css')}}" rel="stylesheet" type="text/css')}}">
-		<link rel="stylesheet" href="{{asset('pixeden/pe-icon-7-stroke/css/pe-icon-7-stroke.css')}}">
-		<link rel="stylesheet" href="{{asset('pixeden/pe-icon-7-stroke/css/helper.css')}}">
 
-        <!-- </?php
+<!-- </?php
         if (isset($this->css)) {
             foreach ($this->css as $css) {
                 echo '<link rel="stylesheet" href="' . URL . 'views' . $css . '"/>';
             }
         }
         ?> -->
-        <script src="{{asset('js/jquery.js')}}"></script>
-        <script src="{{asset('js/jquery.min.js')}}"></script>
-        <script src="{{asset('js/jquery-ui.js')}}"></script>
-        <script src="{{asset('js/jquery.redirect.min.js')}}"></script>
-        <script src="{{asset('js/jquery.price_format.1.8.js')}}"></script>
-        <!--<script src="{{asset('js/jquery.numberformatter-1.2.4.js')}}"></script>-->
-        <script src="{{asset('js/jquery.number.min.js')}}"></script>
-        <script src="{{asset('js/jquery.maskedinput.js')}}"></script>
-        <script>
-            URL = '{{('')}};
-        </script>
+<script src="{{asset('js/jquery.js')}}"></script>
+<script src="{{asset('js/jquery.min.js')}}"></script>
+<script src="{{asset('js/jquery-ui.js')}}"></script>
+<script src="{{asset('js/jquery.redirect.min.js')}}"></script>
+<script src="{{asset('js/jquery.price_format.1.8.js')}}"></script>
+<!--<script src="{{asset('js/jquery.numberformatter-1.2.4.js')}}"></script>-->
+<script src="{{asset('js/jquery.number.min.js')}}"></script>
+<script src="{{asset('js/jquery.maskedinput.js')}}"></script>
+<!-- <script type="text/javascript" src="{{asset('datatable/datatables.min.js')}}" </script> <script> -->
 
-        <script src="{{asset('js/custom.js')}}"></script>
-        <link rel="stylesheet" href="{{asset('css/default.css')}}"/>
-        <!-- </?php
-        if (isset($this->js)) {
-            foreach ($this->js as $js) {
-                echo '<script src="' . URL . 'views' . $js . '"></script>';
-            }
-        }
-        ?> -->
-    </head>
 
-    <style>
-        @font-face {
-            font-family: 'agency fb'; /*a name to be used later*/
-            src: url('{{asset('fonts/AGENCYR.ttf')}}'); /*URL to font*/
-        }
+</script>
 
-        @font-face {
-            font-family: 'agency fb2'; /*a name to be used later*/
-            src: url('{{asset('fonts/AGENCYB.ttf')}}'); /*URL to font*/
-        }
-		
-		/* @font-face {
+<head>
+    </nav>
+    <script src="{{asset('js/custom.js')}}"></script>
+    <link rel="stylesheet" href="{{asset('css/default.css')}}" />
+</head>
+
+<style>
+    @font-face {
+        font-family: 'agency fb';
+        /*a name to be used later*/
+        src: url('{{asset('fonts/AGENCYR.ttf')}}');
+        /*URL to font*/
+    }
+
+    @font-face {
+        font-family: 'agency fb2';
+        /*a name to be used later*/
+        src: url('{{asset('fonts/AGENCYB.ttf')}}');
+        /*URL to font*/
+    }
+
+    /* @font-face {
             font-family: 'verdana'; 
             src: url('{{asset('fonts/HelveticaNeueLTStd-Ex.otf')}}'); 
         }
@@ -103,358 +109,305 @@ else
             font-family: 'Verdana'; 
             src: url('{{asset('fonts/HelveticaNeueLTStd-Ex.otf')}}'); 
         } */
-		@font-face {
-            font-family: 'verdana'; 
-            src: url('{{asset('fonts/Verdana.ttf')}}'); 
-        }
-		@font-face {
-            font-family: 'Verdana'; 
-            src: url('{{asset('fonts/Verdana.ttf')}}'); 
-        }
-        .subscribeNow{
-            font-size:14px!important;
-            margin-right:15px;
-            color:orange!important;
-        }
-        .subscribeNow:hover{
-            color:#183867!important;
-        }
-        #imgprevs{
-            width: 161px;
-            height:100px;
-            margin-top:10px;
-			margin-bottom:20px;
-        }
-		.orderNowPopHolder
-		{
-			z-index: 100;
-			position: fixed;
-			overflow: hidden;
-		}
-    </style>
-     <script>
-
-            $(function () {
-                
-                 $("#imgInp").change(function() {
-                 fsize = this.files[0].size;
-                 $('input[name="hasFile"]').val('true');
-                 readURL(this);
-                 });
-                 function readURL(input) {
-                 if (input.files && input.files[0]) {
-                 var reader = new FileReader();
-                 reader.onload = function(e) {
-                 $('#imgprevs').attr('src', e.target.result);
-                 }
-                 
-                 reader.readAsDataURL(input.files[0]);
-                 }
-                 }
-                 */
-            });
-    </script>
-    <!-- </?php
-    $company = DAOFactory::getTblOrganizationInfoDAO()->load(Session::getSession('infoid'));
-    ?>
-
-</?php
-    $subLink = '';
-    if(Session::getSession('UB_SUBDOMAINS'))
-    {
-        $subLink = Session::getSession('UB_SUBDOMAINS').'/';
+    @font-face {
+        font-family: 'verdana';
+        src: url('{{asset('fonts/Verdana.ttf')}}');
     }
-?> --> -->
-    <body>
-        <div id="headerHead">
-            <div class="top">
 
-                <div id="link">
+    @font-face {
+        font-family: 'Verdana';
+        src: url('{{asset('fonts/Verdana.ttf')}}');
+    }
 
-                    <!--<a href="#" class="mainHeaderLink supportlink </?php echo ($cl == 'setting') ? 'activemainHeaderLink' : '' ?>">
-                        SUPPORT
-                    </a>-->
-                    <a href="#" class="hidden mainHeaderLink supportlink toremove">
-                        ASK TAX EXPERT
-                    </a>
-                    <a href="{{('approval')}}" class="mainHeaderLink toremove hidden">
-                        DOC. FOR APPROVAL
-                    </a>
-                    <a href="http://audit.dadaslitson.com/" target="_BLANK" class="mainHeaderLink toremove hidden">
-                        AUDIT FORMS
-                    </a>
-                    <a href="{{asset('help/pdf/how to use UB Service - All.pdf')}}" target="_blank" class="mainHeaderLink supportlink2 toremove </?php echo ($cl == 'setting') ? 'activemainHeaderLink' : '' ?>">
-                        HELP
-                    </a>
-                    <!-- </?php if (DAOFactory::getTblUserDAO()->load(Session::getSession('user'))->type == 'admin') { ?> -->
-                        <a href="{{('/setting/company')}}" class="mainHeaderLink supportlink3 toremove </?php echo ($cl == 'setting') ? 'activemainHeaderLink' : '' ?>">
-                            SETTINGS
-                        </a>
-                    <!-- </?php } ?> -->
-                    <a href="{{('/index/index')}}" class="mainHeaderLink supportlink2">
-                        LOGOUT
-                    </a>
-                </div>	
-                <div class="unlibooks">
-                    <!-- </?php if ($company->logoName == '') {
-                        <!-- ?> -->
-                                             <!-- <img class="logo"src="{{asset('images/serviceNewLogo.png')}}">  -->
-                        <img class="logo"src="{{asset('images/usv_logo_long.png')}}">
-                    <!-- </?php } else if ($company->logoName != '') {
-                        ?> -->
-                        <!-- <img id="imgprevs" src ="{{('companylogo')}}" alt="your logo"/> -->
+    .subscribeNow {
+        font-size: 14px !important;
+        margin-right: 15px;
+        color: orange !important;
+    }
 
-                    <!-- </?php } ?> -->
-                </div>
+    .subscribeNow:hover {
+        color: #183867 !important;
+    }
 
-                <div class="belowTop">
-                    <div class="hidden link2">
-                        <a class="refer">Referral</a>
-                        <a class="subTop">Pricing & Upgrade</a>
-                    </div>	
-                    <div>
-                         <!-- <img class="hidden upload" src ="{{asset('companylogo')}}" /> -->
-                        <!-- <a href="{{('Upload')}}"><img class="img"  src="{{asset('images/unlibook.png')}}"></a> -->
-                    </div>
-                    <div class="hidden companyName2">
-                        <!-- </?php
-                        echo $organization->orgName;
-                        ?> -->
-                    </div>
-                    <div class="" style="padding-bottom:5px;width:100%;text-align:center;margin-left:67px;margin-top:20px;">
-                        <a class="hidden" style="color:gray;font-size:12px;font-family:Verdana!important;font-weight:normal;">
-                            You have <b style="color:#183867;"> day(s)</b> remaining in your .
-                        </a>
-						<!--
-                        <a href="#" id="orderNow" class="subscribeNow" style="font-family:Verdana!important;">
-                            PAY NOW!
-                        </a>-->
-						<a href="#"  class="hidden subscribeNow enterLicense"  style="font-family:Verdana!important;">
-						   <!-- PAY NOW.-->
-						   Enter License
-						</a>
-                    </div>
+    #imgprevs {
+        width: 161px;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 
-                    <div class="discountcontainer"><a href="" class="hidden discountcoupon" >GET DISCOUNT COUPON CODE NOW!</a></div>
-                    <div style="height: 15px" class="discountcontainer"></div>
+    .orderNowPopHolder {
+        z-index: 100;
+        position: fixed;
+        overflow: hidden;
+    }
 
-                    <div class="div">
-                        <div id="lowerLink">
-                            <a href="{{('/dashboard/index')}}" class="submit " >DASHBOARD</a>
-                            <img class="linestand" src="{{asset('images/linestand.png')}}">
+    .settingDrop {
+        background-color: #A21414;
+    }
 
-                                           
-                                <a href="{{('Invoice')}}" class="submit" >BILLING</a>
-                                <img class="linestand" src="{{asset('images/linestand.png')}}">
-                               
-                     
-                            <!-- if ($userlevel->salesModule == 'yes') {
-                                ?>                 -->
-                                <a href="{{('Sales')}}" class="submit" >SALES</a>
-                                <img class="linestand" src="{{asset('images/linestand.png')}}">
-                                <!-- </?php
-                            }
-                            if ($userlevel->purchaseModule == 'yes') {
-                                ?>                 -->
-                                <a href="{{('Purchase')}}" class="submit" >PURCHASE</a>
-                                <img class="linestand" src="{{asset('images/linestand.png')}}">
-                                <!-- </?php
-                            }
-                            if ($userlevel->expensesModule == 'yes') {
-                                ?>                                 -->
-                                <a href="{{('Expenses')}}" class="submit">EXPENSES</a>
-                                <!-- <a href="</?= URL ?>TimeTracking" class="submit </?php echo ($cl == 'timetracking') ? 'link-selected' : '' ?> ">TIME TRACKING</a>-->
-                                <img class="linestand" src="{{asset('images/linestand.png')}}">
-                                <!-- </?php
-                            }
-                            if ($userlevel->accountingModule == 'yes') {
-                                ?>        -->
-                                <a href="{{('Accounting')}}" class="submit">ACCOUNTING</a>
-                                <img class="linestand" src="{{asset('images/linestand.png')}}">
-                                <!-- </?php
-                            }
-                            ?>  -->
-                            <a href="{{('Taxplan')}}" class="submit hidden">TAXPLAN</a>
-                            <img class="linestand" src="{{asset('images/linestand.png')}}">
-                            <!-- </?php if ($userlevel->inventoryModule == 'yes') { ?>  -->
-                                <a href="{{('/inventory/menu')}}" class="submit">INVENTORY</a>
-                                <img class="linestand" src="{{asset('images/linestand.png')}}">
-                                <!-- </?php
-                            }
-                            if ($userlevel->reports == 'yes') {
-                                ?>        -->
-                                <a href="{{('/report/index')}}" class="submit">REPORTS</a>
-  
+    #my-nav {
+        height: 70px;
+    }
 
-                        </div>
-                    </div>
-                    <!-- </?php
-                    if (isset($this->menu)) {
-                        require_once $this->menu;
-                    }
-                    ?> -->
+</style>
+<script>
+    $(function () {
 
-                </div>	
-            </div>
+        $("#imgInp").change(function () {
+            fsize = this.files[0].size;
+            $('input[name="hasFile"]').val('true');
+            readURL(this);
+        });
 
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imgprevs').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+    });
+
+</script>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color:#A21414;">
+         <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+            aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+                <img class="logo" src="{{asset('images/usv_logo_long.png')}}">
+             
+                <li><a href="{{('/dashboard/index')}}" class="mainHeaderLink supportlink2 toremove" style="font-size: 28.24px;">DASHBOARD </a></li>
+                <li class="dropdown"><a href="#"class=" dropdown-toggle logging mainHeaderLink supportlink2 toremove"data-toggle="dropdown">BILLING</a>
+                    <ul class="dropdown-menu settingDrop">
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/salesreceipt')}}" class="mainHeaderLink">CASH RECEIPT</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/index')}}" class="mainHeaderLink">BILLING</a> </li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/collection')}}" class="mainHeaderLink">COLLECTION </a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/customers')}}" class="mainHeaderLink">CUSTOMERS </a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/tasks')}}" class="mainHeaderLink">SERVICE ITEMS </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle logging mainHeaderLink" data-toggle="dropdown">SALES</a>
+                    <ul class="dropdown-menu settingDrop">
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/setting/user')}}" class="mainHeaderLink">CASH INVOICE</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/setting/department')}}" class="mainHeaderLink">SALES ORDER</a> </li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/setting/serviceItem')}}" class="mainHeaderLink">DELIVER  RECECIEPT</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/setting/serviceItem')}}" class="mainHeaderLink">SALES INVOICE</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/setting/serviceItem')}}" class="mainHeaderLink">COLLECTION</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a  href="{{('/setting/serviceItem')}}" class="mainHeaderLink">CM</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/setting/serviceItem')}}" class="mainHeaderLink">SALES RETURN</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/setting/serviceItem')}}" class="mainHeaderLink">ITEMS</a> </li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle logging mainHeaderLink" data-toggle="dropdown">PURCHASE </a>
+                    <ul class="dropdown-menu settingDrop">
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/salesreceipt')}}" class="mainHeaderLink">PURCHASE ORDER</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/index')}}" class=" mainHeaderLink">RECIEVE ORDER</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/collection')}}" class="mainHeaderLink">RECEIVE INVOICE</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/customers')}}" class="mainHeaderLink">RECEIVE RETURN</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/tasks')}}" class="mainHeaderLink">ITEMS</a>
+                        </li>
+                    </ul>
+                <li class="dropdown"><a href="#" class="dropdown-toggle logging mainHeaderLink" data-toggle="dropdown">EXPENSES </a>
+                    <ul class="dropdown-menu settingDrop">
+                        <li class=" mainHeaderLink "><a href="{{('/invoice/salesreceipt')}}" >QUICK EXPENSES</a></li>
+                        <li class=" mainHeaderLink "><a href="{{('/invoice/index')}}" >BILL PAYABLE</a> </li>
+                        <li class=" mainHeaderLink "><a href="{{('/invoice/collection')}}" >PAYMENT</a></li>
+                        <li class=" mainHeaderLink "><a href="{{('/invoice/customers')}}" >CASH ADVANCES</a></li>
+                        <li class=" mainHeaderLink "><a href="{{('/invoice/tasks')}}" >VENDOR</a>
+                        </li>
+                    </ul>
+                <li class="dropdown"><a href="#" class="dropdown-toggle logging mainHeaderLink" data-toggle="dropdown">ACCOUNTING </a>
+                    <ul class="dropdown-menu settingDrop">
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/salesreceipt')}}" class="mainHeaderLink">CHART OF ACCOUNTS</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/index')}}" class="mainHeaderLink">JOURNAL ENTRY</a> </li>
+                        </li>
+                    </ul>                   
+                <li class="dropdown"><a href="#" class="dropdown-toggle logging mainHeaderLink" data-toggle="dropdown">INVENTORY </a>
+                    <ul class="dropdown-menu settingDrop">
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/salesreceipt')}}" class="mainHeaderLink">ON HAND</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/index')}}" class="mainHeaderLink">COUNTING</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/collection')}}" class="mainHeaderLink">TRANSFER</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/customers')}}" class="mainHeaderLink">WAREHOUSE</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/tasks')}}" class="mainHeaderLink">PRODUCT CATEGORY</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a href="{{('/invoice/tasks')}}" class="mainHeaderLink">AREA</a></li>
+                        
+                    </ul>
+                <li><a href="{{('/report/index')}}" class="mainHeaderLink">REPORTS</a></li>
+                <li><a href="{{asset('help/pdf/how to use UB Service - All.pdf')}}" target="_blank"class="mainHeaderLink">HELP</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle logging mainHeaderLink" data-toggle="dropdown">SETTINGS </a>
+                    <ul class="dropdown-menu settingDrop">
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"> <a class="mainHeaderLink" href="{{('')}}">COMPANY</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"> <a class="mainHeaderLink" href="{{('')}}">BEGINNING BALANCE</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a class="mainHeaderLink" href="{{('')}}">USER & PERMISSION</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a class="mainHeaderLink" href="{{('')}}">OUTLET BRANCHING</a></li>
+                        <li class="settingDropdown mainHeaderLink supportlink2 toremove"><a class="mainHeaderLink" href="{{('')}}">IMPORT  EXPORT</a></li>
+                    </ul>
+                <a href="{{('/index/index')}}" class="mainHeaderLink supportlink2">LOGOUT</a>
         </div>
-    </body>
+    </nav>
+</body>
 </html>
 <div class="supportPopBack hidden">
-
 </div>
 <div class="orderNowPopHolder">
-
 </div>
 <script>
-	$(function(){
-		$('.enterLicense').click(function(){
-				var email = '</?=Session::getSession('main_email')?>';
-				$.post(URL+'user/checkPortal',{'email':email})
-					.done(function(result){
-						
-						if(result == 'client')
-						{
-							$.post(URL+'user/resellerModal',{'email':email,'login':true})
-								.done(function(result){
-									$('.popBack').html(result);
-									$('.popBack').removeClass('hidden');
-								});
-							
-						}
-						else
-						{
-							 $('.form-submit-button').click();
-						}
-						
-					});
-			
-				return false;
-			});
-	});
+    $(function () {
+        $('.enterLicense').click(function () {
+            var email = '</?=Session::getSession('
+            main_email ')?>';
+            $.post(URL + 'user/checkPortal', {
+                    'email': email
+                })
+                .done(function (result) {
+
+                    if (result == 'client') {
+                        $.post(URL + 'user/resellerModal', {
+                                'email': email,
+                                'login': true
+                            })
+                            .done(function (result) {
+                                $('.popBack').html(result);
+                                $('.popBack').removeClass('hidden');
+                            });
+
+                    } else {
+                        $('.form-submit-button').click();
+                    }
+
+                });
+
+            return false;
+        });
+    });
 
     $('.supportlink').click(function () {
         window.open(URL + 'support/lists');
-        
-         $.post(URL + 'support/support')
-         .done(function (returnData) {
-         $('.supportPopBack').html(returnData);
-         $('.supportPopBack').removeClass('hidden');
-         $('body').css('overflow', 'hidden');
-         $(".supportPopBack").css('z-index', '100');
-         
-         $('.xsupport').click(function () {
-         if (confirm('Are you sure, you want to leave this page without sending?')) {
-         $('.supportPopBack').addClass('hidden');
-         $('.supportPopBack').html('');
-         $('body').css('overflow', 'auto');
-         // location = URL + 'dashboard/index';
-         }
-         });
-         
-         })
-         .fail(function () {
-         alert('Connection Error!');
-         });
-         
+
+        $.post(URL + 'support/support')
+            .done(function (returnData) {
+                $('.supportPopBack').html(returnData);
+                $('.supportPopBack').removeClass('hidden');
+                $('body').css('overflow', 'hidden');
+                $(".supportPopBack").css('z-index', '100');
+
+                $('.xsupport').click(function () {
+                    if (confirm('Are you sure, you want to leave this page without sending?')) {
+                        $('.supportPopBack').addClass('hidden');
+                        $('.supportPopBack').html('');
+                        $('body').css('overflow', 'auto');
+                        // location = URL + 'dashboard/index';
+                    }
+                });
+
+            })
+            .fail(function () {
+                alert('Connection Error!');
+            });
+
         return false;
 
     });
 
     $('.casa').click(function () {
         $.post(URL + 'support/cas')
-                .done(function (returnData) {
-                    $('.popBack').html(returnData);
-                    $('.popBack').removeClass('hidden');
-                    $('body').css('overflow', 'hidden');
-                    $(".popBack").css('z-index', '100');
+            .done(function (returnData) {
+                $('.popBack').html(returnData);
+                $('.popBack').removeClass('hidden');
+                $('body').css('overflow', 'hidden');
+                $(".popBack").css('z-index', '100');
 
-                    $('.no').click(function () {
-                        if (confirm('Are you sure you want to leave this page?')) {
-                            $('.popBack').addClass('hidden');
-                            $('.popBack').html('');
-                            $('body').css('overflow', 'auto');
-                            // location.reload();
-                        }
-                    });
-
-                })
-                .fail(function () {
-                    alert('Connection Error!');
+                $('.no').click(function () {
+                    if (confirm('Are you sure you want to leave this page?')) {
+                        $('.popBack').addClass('hidden');
+                        $('.popBack').html('');
+                        $('body').css('overflow', 'auto');
+                        // location.reload();
+                    }
                 });
+
+            })
+            .fail(function () {
+                alert('Connection Error!');
+            });
 
         return false;
 
     });
 
-	$('#orderNow').click(function(){
-		
-		$('body').css('overflow-y','hidden');
-		$.post('</?=URL?>index/orderNowPop')
-		.done(function(returnData){
-			$('.orderNowPopHolder').html(returnData);
-			$('#cancelOrder').click(function(){
-				$('body').css('overflow-y','scroll');
-				$('.orderNowPopHolder').html('');
-			})
-		})
-		return false;
-	})
-	
-     $('.casa').click(function() {
-     $.post(URL + 'support/cas')
-     .done(function(returnData) {
-     $('.popBack').html(returnData);
-     $('.popBack').removeClass('hidden');
-     $('body').css('overflow', 'hidden');
-     $(".popBack").css('z-index', '100');
-     
-     $('.no').click(function() {
-     if (confirm('Are you sure, you want to leave this page?')) {
-     $('.popBack').addClass('hidden');
-     $('.popBack').html('');
-     $('body').css('overflow', 'auto');
-     // location.reload();
-     }
-     });
-     
-     })
-     .fail(function() {
-     alert('Connection Error!');
-     });
-     
-     return false;
-     
-     }); 
+    $('#orderNow').click(function () {
 
-    $('.referalLink').click(function() {
-     $.post(URL + 'support/referral')
-     .done(function(returnData) {
-     $('.popBack').html(returnData);
-     $('.popBack').removeClass('hidden');
-     $('body').css('overflow', 'hidden');
-     $(".popBack").css('z-index', '100');
-     
-     $('.xsupport').click(function() {
-     if (confirm('Are you sure, you want to leave this page without sending?')) {
-     $('.popBack').addClass('hidden');
-     $('.popBack').html('');
-     $('body').css('overflow', 'auto');
-     location = URL + 'dashboard/index';
-     }
-     });
-     
-     })
-     .fail(function() {
-     alert('Connection Error!');
-     });
-     
-     return false;
-     
-     });
-    
+        $('body').css('overflow-y', 'hidden');
+        $.post('</?=URL?>index/orderNowPop')
+            .done(function (returnData) {
+                $('.orderNowPopHolder').html(returnData);
+                $('#cancelOrder').click(function () {
+                    $('body').css('overflow-y', 'scroll');
+                    $('.orderNowPopHolder').html('');
+                })
+            })
+        return false;
+    })
 
-</script>		 
+    $('.casa').click(function () {
+        $.post(URL + 'support/cas')
+            .done(function (returnData) {
+                $('.popBack').html(returnData);
+                $('.popBack').removeClass('hidden');
+                $('body').css('overflow', 'hidden');
+                $(".popBack").css('z-index', '100');
+
+                $('.no').click(function () {
+                    if (confirm('Are you sure, you want to leave this page?')) {
+                        $('.popBack').addClass('hidden');
+                        $('.popBack').html('');
+                        $('body').css('overflow', 'auto');
+                        // location.reload();
+                    }
+                });
+
+            })
+            .fail(function () {
+                alert('Connection Error!');
+            });
+
+        return false;
+
+    });
+
+    $('.referalLink').click(function () {
+        $.post(URL + 'support/referral')
+            .done(function (returnData) {
+                $('.popBack').html(returnData);
+                $('.popBack').removeClass('hidden');
+                $('body').css('overflow', 'hidden');
+                $(".popBack").css('z-index', '100');
+
+                $('.xsupport').click(function () {
+                    if (confirm('Are you sure, you want to leave this page without sending?')) {
+                        $('.popBack').addClass('hidden');
+                        $('.popBack').html('');
+                        $('body').css('overflow', 'auto');
+                        location = URL + 'dashboard/index';
+                    }
+                });
+
+            })
+            .fail(function () {
+                alert('Connection Error!');
+            });
+
+        return false;
+
+    });
+
+</script>
 <div class="mainBody"></div>
 
 <!-- 

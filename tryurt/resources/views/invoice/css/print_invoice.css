@@ -1,0 +1,618 @@
+ .popBack{
+	background: black;
+	position: fixed;
+	/* top:20px!important; */
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(1, 1, 1, 0.3);
+	overflow:auto;
+} 
+.popback:parent{
+	overflow:hidden;
+}
+.invoiceHolderInvoicePrint{
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom:30px;
+}
+.PaymentTypeFormInvoice{
+	width: 805px;
+	margin: auto !important;
+	background-color: white;
+}
+#newInvoicePrint{
+	font-family: Tahoma;
+	margin-left: 15px;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top:65px;
+	height: 27px;
+	border: 1px solid black;
+	width: 773px;
+	text-align: center;
+	font-style:normal;
+}
+.niInvoice{
+	font-size: 30px;
+}
+.clogo{
+	margin-left:5px;
+	font-size: 12px;
+	font-family: Tahoma;
+	text-shadow: none;
+}
+.clogoup{
+	margin-left: 14px;
+	font-size: 12px;'
+	font-weight:bold;
+	font-family: Verdana!important;
+	text-shadow: none;
+	color: #000000;
+}
+.clogoAdd{
+	margin-left: 157px;
+	width: 50px;
+	font-size: 12px;
+	font-family: Tahoma;
+	text-shadow: none;
+	font-weight: none;
+}
+.clogoAdd2{
+	margin-left: 157px;
+	width: 200px;
+	font-size: 12px;
+	font-family: Tahoma;
+	text-shadow: none;
+	font-weight: none;	
+}
+.invoicetr{
+	font-size: 12px;
+	font-family: Tahoma;
+	text-shadow: none;
+}
+.tbleInvoice{
+	margin-top: 26px;
+	margin-left: 20px!important;
+	width: 100%!important;
+}
+.tbleInvoice2{
+	margin-top: 26px;
+	width: 100%;
+}
+.tbleInvoice td{
+	font-weight:normal;
+	padding:3px;
+	font-size: 12px;
+	font-family: Verdana!important;
+}
+.inputboxInvoiceTxt{
+	height: 100%;
+	margin-top: 0px;
+	font-size: 12px;
+	font-family: Tahoma;
+	border: none;
+	width:250px;
+	padding:0px;
+}
+.inputboxInvoiceTxtIN{
+	margin-top: 0px;
+	font-size: 12px;
+	font-family: Tahoma;
+	border: none;
+	width:125px;
+	height:100%;
+	padding:0px;
+	text-align: right;
+	margin-right:7px;
+}
+.inputboxInvoiceTxtID{
+	height: 20px;
+	margin-top: -1px;
+	font-size: 12px;
+	font-family: Tahoma;
+	margin-left: -18px;
+	border: none;
+	margin:70px;
+}
+.inputboxInvoiceTxtDD{
+	height: 20px;
+	margin-top: -1px;
+	font-size: 12px;
+	font-family: Tahoma;
+	margin-left: -35px;
+	border: none;
+}
+.inputboxInvoiceTxtSO{
+	height: 20px;
+	margin-top: -1px;
+	font-size: 12px;
+	font-family: Tahoma;
+	margin-left: -35px;
+	border: none;
+}
+.inputboxInvoiceTxtDIS{
+	height: 20px;
+	margin-top: -1px;
+	font-size: 12px;
+	font-family: Tahoma;
+	margin-left: -35px;
+	border: none;
+}
+.particularInvoice{
+	padding-top:35px;
+}
+.inputboxInvoiceTxt2 {
+	margin-top: 1px;
+	font-family: Tahoma;
+	font-size: 12px;
+	border: none;
+	width: 220px;
+	height: 40px;
+	word-break: break-word;
+	outline-style:none;
+}
+.inputboxInvoiceTxtParticular{
+	margin-top: 35px;
+	font-family: Tahoma;
+	font-size: 12px;
+	border: none;
+	width:100%;
+}
+.tbl2Invoice{
+	border-collapse: collapse;
+}
+.tbl2Invoice td{
+	width:89px;
+	font-family: Tahoma;
+	font-size: 12px;	
+}
+.tblInvoice2{
+	border: 1px solid black;
+	margin-top: 15px;
+	padding-bottom: 30px;
+	margin: auto;
+	width:96%;
+}
+.newTblInv{
+	border-spacing: 0px;
+}
+.tblInvoicepaddingbottom td{
+	padding-bottom:30px;
+}
+.tblInvoice2, th{
+	text-align: left;
+	border-spacing: 0px;
+}
+.tblInvoice2 th{
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;	
+	color: black;
+	font-size: 12px;
+	font-family:tahoma;
+	font-weight: bold;
+	/* background-color: #C8C8C8; */
+	padding: 5px;
+}
+.tblInvoice2 td{
+	/*border-bottom: 1px solid black;
+	border-right: 1px solid black;	*/
+	color: black;
+	font-size: 12px;
+	font-family:tahoma;
+	font-weight: normal;
+	padding: 5px;
+}
+.thInvoiceNew{
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;	
+	font-color: black;
+	font-size: 14px;
+	font-family: Tahoma;
+	font-weight: bold;
+	background-color: #C8C8C8;
+	padding-left: 5px;
+}
+.thInvoiceNew2{
+	border-bottom: 1px solid black;
+	font-color: black;
+	font-size: 14px;
+	font-family: Tahoma;
+	font-weight: bold;
+	background-color: #C8C8C8;
+	text-align: right;
+	padding-right: 5px;
+}
+.thInvoiceNew3{
+	border-bottom: 1px solid black;
+	font-color: black;
+	font-size: 14px;
+	font-family: Tahoma;
+	font-weight: bold;
+	background-color: #C8C8C8;
+	border-right: 1px solid black;	
+	text-align: center;
+	width: 888px;
+}
+.thInvoiceNew5{
+	border-bottom: 1px solid black;
+	font-color: black;
+	font-size: 14px;
+	font-family: Tahoma;
+	font-weight: bold;
+	background-color: #C8C8C8;
+	border-right: 1px solid black;	
+	text-align: center;
+}
+.thInvoiceNew4{
+	border-bottom: 1px solid black;
+	font-color: black;
+	font-size: 14px;
+	font-family: Tahoma;
+	font-weight: bold;
+	background-color: #C8C8C8;
+	border-right: 1px solid black;	
+	text-align: right;
+	padding-right: 5px;
+}
+.boarderNew{
+	background-color: white;
+	font-weight: none;
+	padding-left: 5px;
+	font-size: 12px;
+	font-family: Tahoma;
+	padding-top: 5px;
+}
+.boarderNew2{
+	background-color: white;
+	font-weight: none;
+	padding-left: 5px;
+	text-align: center;
+	font-size: 12px;
+	font-family: Tahoma;
+	padding-top: 5px;
+}
+.boarderNew3{
+	background-color: white;
+	font-weight: none;
+	padding-right: 5px;
+	text-align: right;
+	font-size: 12px;
+	font-family: Tahoma;
+	padding-top: 5px;
+}
+.tbl2Invoice2{
+	border: 1px solid black;
+	margin-top: 20px;
+	margin-left: 15px;
+	padding-bottom: 30px;
+	font-size: 12px;
+	font-family:Tahoma;
+	width: 96.1%;
+}
+.tbl2Invoice2, tr th{
+	text-align: left;
+	border-spacing: 0px;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;	
+	font-size: 14px;
+	font-family: Tahoma;
+	font-weight: bold;
+	/* background-color: #C8C8C8; */
+	padding-left: 5px;
+	width: 19.3%;
+}
+.tbl3Invoice2{
+	border: 1px solid black;
+	margin-top:25px;
+	border-collapse: collapse;
+	float: right;
+	margin-right: 15px;
+}
+.SAInvoice{
+	text-align: left;
+	padding-left: 5px;
+	font-size: 12px;
+	font-family: Tahoma;
+}
+.SAInvoice2{
+	text-align: left;
+	font-size: 12px;
+	font-family: Tahoma;
+	padding:5px;
+}
+.SAInvoice3{
+	text-align: left;
+	padding-left: 5px;
+	font-size: 12px;
+	font-family: Tahoma;
+	padding-top: -5px;
+	font-weight: bold;
+}
+.inputTotalInvoice{
+	width: 130px;
+	margin-left: 56px;
+	text-align: right;
+	padding-right:0px;
+	font-size: 12px;
+	font-family: Tahoma;
+	border: none;
+}
+.inputTotalInvoice2{
+	width: 130px;
+	margin-left: 56px;
+	text-align: right;
+	padding-right: 3px;
+	font-size: 12px;
+	font-family: Tahoma;
+	border: none;
+}
+.inputTotalInvoice3{
+	width: 130px;
+	margin-left: 56px;
+	text-align: right;
+	padding-right: 3px;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Tahoma;
+	border: none;
+	box-shadow: none;
+	background-color: #c8c8c8;
+	margin-top:-1px;
+}
+.trTotalInvoicesGr{
+	margin-top: -5px;
+	background-color: #c8c8c8;
+	border-spacing: 0px;
+
+}
+.RemarksInvoice{
+	margin-top:30px;
+	margin-left: 15px;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: none;
+	font-family: Tahoma;
+}
+.RemarkText{
+	border:none!important;
+	margin-left:15px;
+	width:460px;
+	height:initial;
+	padding:0px !important;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-family:tahoma;
+	font-size:12px;
+	padding:5px;
+	word-break:break-all;
+	white-space:pre-wrap;
+}
+.closePrint{
+	background-color: gray;
+	color: white;
+	border: none;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 16px;
+	height: 25px;
+	float:right;
+	margin-right: -1px;
+}
+.tblInvoice2 tr th:nth-child(2){
+	text-align: center;
+}
+.tblInvoice2 tr th:nth-child(4){
+	text-align: right;
+}
+.tblInvoice2 tr th:nth-child(5){
+	text-align: right;
+}
+.tblInvoice2 tr td:nth-child(2){
+	text-align: center;
+}
+.tblInvoice2 tr td:nth-child(4){
+	text-align: right;
+}
+.tblInvoice2 tr td:nth-child(5){
+	text-align: right;
+}
+.tblInvoice2Item{
+	border: 1px solid black;
+	margin-top: 10px;
+	margin-left: 15px;
+	padding-bottom: 30px;
+	width: 96.1%;
+}
+.newTblInv{
+	border-spacing: 0px;
+}
+.tblInvoice2Item, th{
+	text-align: left;
+	border-spacing: 0px;
+	margin: auto;
+	margin-top: 15px;
+	width: 773px;
+}
+.tblInvoice2Item th{
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;	
+	color: black;
+	font-size: 12px;
+	font-family: tahoma;
+	font-weight: bold;
+	background-color: #C8C8C8;
+	padding-right: 5px;
+	width: 19.3%;
+}
+.tblInvoice2Item td{
+	font-family: tahoma;
+	font-size: 12px;
+	padding: 5px;
+}
+.tblInvoice2Item tr th:nth-child(2){
+	text-align: center;
+}
+.tblInvoice2Item tr th:nth-child(4){
+	text-align: right;
+	padding:5px;
+}
+.tblInvoice2Item tr th:nth-child(5){
+	text-align: right;
+}
+.tblInvoice2Item tr td:nth-child(2){
+	text-align: center;
+}
+.tblInvoice2Item tr td:nth-child(4){
+	text-align: right;
+}
+.tblInvoice2Item tr td:nth-child(5){
+	text-align: right;
+}
+.scplogoclass{
+	width: 114px;
+	height: 63px;
+}
+.addressLogo{
+	color:#000000;
+	font-size:12px;
+	font-family:Verdana;
+	font-weight:normal;
+}
+.pdf{
+	margin-left: 650px;
+	margin-top: 27px;
+	width: 47px;
+	height: 25px;
+	padding: 3px 10px 3px 10px;
+	font-family: agency fb2;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 5px;
+	color: rgb(230, 230, 230);
+	-moz-border-radius: 30px;
+	background: rgb(28, 181, 239);
+	background: -moz-linear-gradient(90deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	background: -webkit-linear-gradient(90deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	background: -o-linear-gradient(90deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	background: -ms-linear-gradient(90deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	background: linear-gradient(0deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	-moz-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	border: none;
+}
+.pdf2{
+	padding: 3px 10px 3px 10px;
+	width: 47px;
+	height: 25px;
+	margin-left:5px;
+	font-family: agency fb2;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 5px;
+	color: rgb(230, 230, 230);
+	-moz-border-radius: 30px;
+	background: rgb(28, 181, 239);
+	background: -moz-linear-gradient(90deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	background: -webkit-linear-gradient(90deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	background: -o-linear-gradient(90deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	background: -ms-linear-gradient(90deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	background: linear-gradient(0deg, rgb(156, 26, 11) 30%, rgb(197, 56, 40) 78%);
+	-moz-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	border: none;
+}
+@media print {
+	.mainbodyInvoice, #container, .mainBody, #footer, #header, .footerHolderNew, input[type=button] {
+		display: none;
+	}
+	.tbl2Invoice{
+		margin-tops:5px;
+	}
+	body{
+		overflow:hidden;
+	}
+	.Main{
+		background: none;
+	}
+
+	.PaymentTypeFormInvoice{
+		width: 100%;
+	}
+	#newInvoice{
+		width: 100%;
+	}
+	.popBack{
+		width:750px;
+		overflow: hidden !important;
+		position: static;
+		background-color: #fff;
+		margin:auto ;
+	}
+	.RemarkText{
+		overflow:hidden;
+	}
+
+	@page {
+		size: portrait;
+        margin:auto;
+        margin: 5px;
+        margin-top:30px;
+        border:none;
+	}
+	thead   {display: table-header-group;   }
+
+	tfoot   {display: table-footer-group;   }
+	
+	@media screen{
+		thead   {display: table-header-group;   }
+
+		tfoot   {display: table-footer-group;   }
+	}
+}
+
+.rateinvoice{
+	font-size: 12px;
+	font-family:tahoma;
+}
+.particularText{
+	font-family: Verdana;
+	font-style: normal;
+	font-size: 11px;
+	width: 245px;
+	height: 90px;
+	border: 1px solid #C8C8C8;
+	background-color: white;
+	max-width: 245px;
+	max-height: 90px;
+	padding: 5px;
+	margin-left: 5px;
+	margin-top: 3px;
+	border:none;
+}
+.cnitableAllInvoice2, td {
+	font-size: 11px;
+	color: black;
+	font-family: Verdana;
+	text-align: left;
+	/* padding: 7px 11px; */
+	/* height: 30px; */
+}
+ #imgprev{
+	width: 161px;
+	height:100px;
+}
+#imgInp{
+	border:none!important;
+}
+.logo2 {
+  width: 80px!important;
+  height: 50!important;
+}
+.closeprint {
+	background: transparent;
+    color: black;
+    border: none;
+    border-radius: 2px;
+    font-family: Arial black;
+    font-weight: bold;
+    font-size: 18px;
+}

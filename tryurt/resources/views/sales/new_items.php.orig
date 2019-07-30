@@ -1,0 +1,331 @@
+
+<style>
+    .invoiceHolderCNTs{
+        width: 100%;
+        margin-top: 70px;
+    }
+    #newCNTs{
+	font-family: agency fb2;
+    color: #c51400;
+    font-weight: bold;
+	margin-top: 16px;
+	padding-bottom: 5px;
+	font-size: 30px;
+    }
+.divCNTsBelowitem{
+        float: right;
+        margin-top:114px;
+    }
+    .cnt-formCNTs{
+        width: 806px;
+        margin: auto !important;
+        font-family: Agency FB;
+        font-size: 12px;
+        background: #fff;
+        padding: 30px;
+    }
+    .cnt-headCNTs{
+        font-size:30px;
+        font-family:agency fb2;
+        margin-top: -7px;
+    }
+    .closeCNTs{
+        background: transparent;
+        color: black;
+        border: none;
+        border-radius: 2px;
+        font-family: Arial black;
+        font-weight: bold;
+        font-size: 24px;
+        right: 355px;
+        top: 66px;
+        outline-style: none;
+        cursor: pointer;
+        float: right;
+	margin-top: -43px;
+        margin-right: -27px
+    }
+    .NewCheck{
+        margin-top: -19px;
+        margin-left: 42;
+        float: left;
+    }
+    .taskACNTs{
+        color: #000000;
+        font-family:Verdana;
+        font-size:12px;
+        text-align:right;
+    }
+    .taskCheckNew{
+        color: #003366;
+        font-family: Agency FB;
+        font-size: 12px;
+        margin-left: 5px;
+        -webkit-transform: scale(0.7);
+        width: 25px;
+        height: 25px;
+    }
+    .tAccountCNTs{
+        margin-left: 5px;
+        width: 235px;
+        height: 27px;
+        background-color: white;
+        font-family:Verdana;
+        font-size:11px;
+        border: solid 1px #C8C8C8;
+        padding:5px;
+    }
+    .checkLabel{
+        font-size: 12px;
+        font-family: Agency FB;
+        color: #000000;
+    }
+    .createNewTasksTble{
+        float: right;
+        margin-top: -50px;
+        margin-right:20px; 
+    }
+    .rph{
+        font-family:Verdana;
+        font-size: 11px;
+        margin-left: 5px;
+        height: 27px;
+        width: 270px;
+        margin-top: 5px;
+        padding:5px;
+        border: solid 1px #C8C8C8;
+    }
+    .descTCNTs{
+        color: #000000;
+        font-family:Verdana;
+        font-size:12px;
+        font-weight: bold;
+        margin-top: -42px;
+    }
+    .itemICNTs{
+        width: 270px;
+        height:90px;
+        background-color: white;
+        font-family:Verdana;
+        font-size:11px;
+        border: solid 1px #C8C8C8;
+        margin-top: 5px;
+        margin-left: 5px;
+        max-width: 270px;
+        max-height:90px;
+        padding:5px;
+    }
+    .rphCNTs{
+        color: #003366;
+        font-family: Agency FB;
+        font-size: 12px;
+    }
+    .rphICNTs{
+        width: 130px;
+        height: 30px;
+        background-color: white;
+        font-family: Agency FB;
+        font-size: 12px;
+        border: solid 1px #C8C8C8;
+    }
+    .vatCNTs{
+        color: #003366;
+        font-family: Agency FB;
+        font-size: 12px;
+    }
+    .vatSCNTs{
+        width: 150px;
+        height: 30px;
+        background-color: white;
+        font-family: Agency FB;
+        font-size: 12px;
+        border: solid 1px #C8C8C8;
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+.saveBCNTs2{
+        margin-right:10px;
+        width: 100px;
+        height: 28px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        outline-style:none;
+    }
+.saanBCNTs2{
+        width: 123px;
+        height: 28px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        outline-style:none;
+    }
+    .itemtable1{
+        float:left;
+    }	
+    .itemtable2{
+        float:right;
+    }	
+    .itemtable1 td{
+        padding-top:3px;
+    }
+    .itemtable2 td{
+        padding-top:3px;
+    }
+    
+    select{
+        width: 235px !important;
+    }
+
+</style>
+<link rel="stylesheet" href="<?php echo URL; ?>public/css/loading.css"/>
+<link rel="stylesheet" href="<?php echo URL; ?>public/css/popup.css"/>
+<div class="jsHolder">
+    <!-- pls do not remove this -->
+</div>
+
+<div class="invoiceHolderCNTs">
+    <form method="post" action="" class="cnt-formCNTs" id="formtask">
+        <div id="newCNTs">
+            <input type="button" class="closeCNTs" value="x">
+            <p class="cnt-headCNTs">CREATE NEW ITEM</p>
+        </div>
+
+        <div>
+            <table class="itemtable1">	
+
+                <tr>
+                    <td class="taskACNTs">Item No.:</td>
+
+                    <td>
+                        <input type="text" class="tAccountCNTs" name="itemCode" value="" required>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="taskACNTs">Item Description:</td>
+                    <td>
+                        <input type="text" class="tAccountCNTs" name="description" value="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="taskACNTs">Unit of Measure:</td>
+                    <td>
+                        <select class="tAccountCNTs uom" name="uomId" id="uom">
+                            <option></option>
+                            <?php foreach ($this->unitmeasure as $uom) { ?>
+                            <option value="<?php echo $uom->id ?>"><?php echo $uom->abbreviation ?></option>
+                            <?php } ?>
+                            <option value="addnewUom">Add New UOM</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="taskACNTs">Conversion Unit:</td>
+                    <td>
+                        <select class="tAccountCNTs">
+                            <option></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="taskACNTs">Product Category:</td>
+                    <td>
+                        <select class="tAccountCNTs" name="productCategoryId" id="productCategoy">
+                            <option></option>
+                            <?php foreach ($this->productCategory as $pc) { ?>
+                            <option value="<?php echo $pc->id ?>"><?php echo $pc->description ?></option>
+                            <?php } ?>
+                            <option value="addnewcategory">Add New Product Category</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="taskACNTs">Product Type:</td>
+                    <td>
+                        <select class="tAccountCNTs" name="productType">
+                            <option value="goods">Goods</option>
+                            <option value="raw mats">Raw Mats</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="taskACNTs">Costing Method:</td>
+                    <td>
+                        <select class="tAccountCNTs" name="costingMethod">
+                            <option></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="taskACNTs">GL Posting:</td>
+                    <td>
+                        <!--<input type="text" class="tAccountCNTs" name="glPosting" value="" required>-->
+                        <select name="glPosting" required >
+                            <option></option>
+                            <?php foreach($this->glPosting as $item){ ?>
+                            <option value="<?php echo $item->id ?>"><?php echo $item->accontName ?></option>
+                            <?php } ?>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="taskACNTs">Active Account</td>
+                    <td><input type="checkbox" checked class="taskCheckNew" name="active"></td>
+                </tr>
+            </table>
+
+            <table class="itemtable2">
+                <tr>
+                    <td class="taskACNTs">Purchased Cost:</td>
+                    <td>
+                        <input type="text" class="tAccountCNTs isNumeric" name="purchaseCost" value="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="taskACNTs">Selling Price:</td>
+                    <td>
+                        <input type="text" class="tAccountCNTs isNumeric" name="sellingCost" value="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="taskACNTs">Profit %:</td>
+                    <td>
+                        <input type="text" class="tAccountCNTs isNumeric" name="profit" value="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="taskACNTs">Last Direct Cost:</td>
+                    <td>
+                        <input type="text" class="tAccountCNTs isNumeric" name="lastDirectCos" value="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="taskACNTs">Available Stock:</td>
+                    <td>
+                        <input type="text" class="tAccountCNTs" name="availableStock" value="" required>
+                    </td>
+                </tr>
+            </table>
+            </table>
+
+        </div>
+
+        <div class="divCNTsBelowitem">	
+            <input type="hidden" name="checkitem" value="task"/>        
+            <input type="submit" value="SAVE" class="saveBCNTs2 addsavebuttonpop">
+            <input type="button" value="SAVE AND ADD NEW" class="saanBCNTs2 addsavebuttonpop" id="saveAddNew">
+        </div>
+
+        <input type="hidden" name="task" class="forTaskTask" value="<?php echo Session::getSession('itemid') != '' ? 'updateitem' : 'additem' ?>"/>
+        <div style="clear:both"></div>
+    </form>
+</div>
+<div class="popup2 hidden">
+    <!--    <div class="categoryfrm hidden">
+    <?php //include('views/sales/new_product_category.php'); ?>
+        </div>-->
+</div>
+<script>
+
+</script>

@@ -1,4 +1,5 @@
 @include('layouts.header')
+@extends('layouts.footer')
 <?php
 $total = 0;
 	$videoTitles = array(
@@ -65,6 +66,10 @@ $total = 0;
     }
     .DashboardContainer{
         position:relative;
+        border-style: solid;
+        border-color: #A21414;
+        margin-top: 90px;
+        
     }
     .start{
         font-size: 34px;
@@ -643,7 +648,7 @@ $total = 0;
     }
     .box4 {
         border: 2px solid pink;
-        height: 255px;
+        height: 270px;
         margin-right: 3px;
         width: 400px;
         float:right;
@@ -701,7 +706,7 @@ $total = 0;
     .cibDiva{
         margin-top: 48px;
 		border-radius: 1px 1px 5px 5px;
-		height: 25px;
+		height: 50px;
 		text-align: center;
 		padding: 8px;
 		border:none;
@@ -742,11 +747,11 @@ $total = 0;
     }
     .hrdashreport {
         height: 5px;
-        width: 98%;
+        width: 0%;
         background-color: rgb(189, 45, 35);
         border: none;
         margin-left:10px;
-    }
+    }.hr
     .recordButtonGet{
         font-family: Agency FB;
         font-size: 31px;
@@ -808,7 +813,7 @@ $total = 0;
 	.dashbutton{
 		border: solid 1px #c8c8c8;
 		border-radius: 10px;
-		height: 21px;
+		height: 35px;
 		padding: 2px 5px 5px 5px;
 		width: 223px;
 		margin: auto;
@@ -1008,7 +1013,7 @@ $org = DAOFactory::getTblOrganizationDAO()->load(Session::getSession('orgid'));
                                 $total = 0;
                                 if ($this->collectedAmount) {
                                     ?> -->
-                                    <table class="tblColAmcollect">
+                                    <!-- <table class="tblColAmcollect">
                                         <tr>
                                             <th style="text-align:left;" rowspan="2">Month</th>
                                             <th style="text-align:center;">Collected</th>
@@ -1016,7 +1021,7 @@ $org = DAOFactory::getTblOrganizationDAO()->load(Session::getSession('orgid'));
                                         </tr>
                                         <tr>
                                             <th style="text-align:center;" colspan="2">Amount</th>
-                                        </tr>
+                                        </tr> -->
                                         <!-- </?php
                                         $total = 0;
                                         foreach ($this->collectedAmount as $each) {
@@ -1124,10 +1129,10 @@ $org = DAOFactory::getTblOrganizationDAO()->load(Session::getSession('orgid'));
                                 if ($this->expenses) {
                                     ?> -->
                                     <table class="tblExpenseexp">
-                                        <tr>
+                                        <!-- <tr>
                                             <th style="text-align:left;">Month</th>
                                             <th style="text-align:right;">Amount</th>
-                                        </tr>
+                                        </tr> -->
                                         <!-- </?php
                                         $total2 = 0;
                                         $count = 1;
@@ -1182,10 +1187,10 @@ $org = DAOFactory::getTblOrganizationDAO()->load(Session::getSession('orgid'));
                                         if ($this->getBilling) {
                                             ?> -->
                                             <table class="tblColAmcollect">
-                                                <tr>
+                                               <tr>
                                                     <th style="text-align:left;">Month</th>
                                                     <th style="text-align:right;">Amount</th>
-                                                </tr>
+                                                </tr> 
                                                 <!-- </?php
                                                 // $total = 0;
                                                 $count = 1;
@@ -1299,18 +1304,19 @@ $org = DAOFactory::getTblOrganizationDAO()->load(Session::getSession('orgid'));
                             $('.popBack').html('');
                             $('body').css('overflow', 'auto');
                         });
-
+                        
                     });
-            return false;
-        } -->
-<!-- 
+                    return false;
+                } -->
+                
+            <script>
     $(function () {
         var count = 0;
         $('.start').addClass('hidden');
-       /*  $.post(URL + 'dashboard/getInvoices')
-                .done(function (returnData) {
+         $.post(URL + 'dashboard/getInvoices')
+              .done(function (returnData) {
                     if (returnData != '') {
-                        // $('.serviceInvoiceDashboard').html(returnData);
+                         $('.serviceInvoiceDashboard').html(returnData);
 						alert(returnData);
                         $('.start').remove();
                     } else {
@@ -1322,7 +1328,7 @@ $org = DAOFactory::getTblOrganizationDAO()->load(Session::getSession('orgid'));
         $.post(URL + 'dashboard/getExpenses')
                 .done(function (returnData) {
                     if (returnData != '') {
-                        // $('.expenseDashboard').html(returnData);
+                         $('.expenseDashboard').html(returnData);
 						alert(returnData);
                         $('.start').remove();
                     } else {
@@ -1345,156 +1351,156 @@ $org = DAOFactory::getTblOrganizationDAO()->load(Session::getSession('orgid'));
 
         function setCount() {
             if (count == 3) {
-                // $('.start').removeClass('hidden');
+             $('.start').removeClass('hidden');
             }
         }
- */
-        /* $.post(URL + 'dashboard/getNotification')
+
+         $.post(URL + 'dashboard/getNotification')
          .done(function(returnData){
          $('.notifyContentsHolder').html(returnData);
-         }) */
+         }) 
     });
 </script>
 <script type="text/javascript">
     google.load("visualization", "1", {packages: ["corechart"]});
 
-</?php if ($this->collectedAmount) { ?>
-        google.setOnLoadCallback(collectedChart);
+// </?php if ($this->collectedAmount) { ?>
+//         google.setOnLoadCallback(collectedChart);
 
-        function collectedChart() {
-            var data = google.visualization.arrayToDataTable([
-                    ['Account Number', 'Rate']
-    </?php
-    $total = 0;
-    $total2 = 0;
-    $count = 1;
-    foreach ($this->collectedAmount as $each) {
-        $total += $each->amountReceived;
-        // if($count < 6){
-        ?>
-                , ['</?= date('F', strtotime($each->transDate)) ?>', </?= round($each->amountReceived > 0 ? $each->amountReceived : 0, 2) ?>]
-        </?php
-        // } else {
-        $total2 += $each->amountReceived;
-        // } 
-        $count++;
-        ?>
-        </?php
-    }
-    // if(count($this->collectedAmount) > 5){
-    ?>
-            // ,["Other's", </?= $total2 ?>]
-    </?php
-    // }
-    ?>
-            ]);
-                    var options = {
-                        title: 'Monthly Collection & Cash Receipt - </?php echo date("Y") ?>',
-                        is3D: true,
-                    };
+//         function collectedChart() {
+//             var data = google.visualization.arrayToDataTable([
+//                     ['Account Number', 'Rate']
+//     // </?php
+//     // $total = 0;
+//     // $total2 = 0;
+//     // $count = 1;
+//     // foreach ($this->collectedAmount as $each) {
+//     //     $total += $each->amountReceived;
+//     //     // if($count < 6){
+//     //     ?>
+//                 , ['</?= date('F', strtotime($each->transDate)) ?>', </?= round($each->amountReceived > 0 ? $each->amountReceived : 0, 2) ?>]
+//         </?php
+//         // } else {
+//         $total2 += $each->amountReceived;
+//         // } 
+//         $count++;
+//         ?>
+//         </?php
+//     }
+//     // if(count($this->collectedAmount) > 5){
+//     ?>
+//             // ,["Other's", </?= $total2 ?>]
+//     </?php
+//     // }
+//     ?>
+//             ]);
+//                     var options = {
+//                         title: 'Monthly Collection & Cash Receipt - </?php echo date("Y") ?>',
+//                         is3D: true,
+//                     };
 
-            var chart = new google.visualization.PieChart(document.getElementById('collectedChart'));
-            chart.draw(data, options);
-        }
-        $('.cibDivlast').remove();
-        $('.overlay3').css('opacity', 1);
-        $('#collectedChart').css('padding', 0);
-</?php } ?>
+//             var chart = new google.visualization.PieChart(document.getElementById('collectedChart'));
+//             chart.draw(data, options);
+//         }
+//         $('.cibDivlast').remove();
+//         $('.overlay3').css('opacity', 1);
+//         $('#collectedChart').css('padding', 0);
+// </?php } ?>
 
-</?php if ($this->getBilling) { ?>
-        google.setOnLoadCallback(invoiceChart);
+// </?php if ($this->getBilling) { ?>
+//         google.setOnLoadCallback(invoiceChart);
 
-        function invoiceChart() {
-            var data = google.visualization.arrayToDataTable([
-                    ['Account Number', 'Rate']
-    </?php
-    $total = 0;
-    $total2 = 0;
-    $count = 1;
-    foreach ($this->getBilling as $each) {
-        $total += $each['grand_total'];
-        // if($count < 6){
-        ?>
-                , ['</?= date('F', strtotime($each['trans_date'])) ?>', </?= round($each['grand_total'], 2) ?>]
-        </?php
-        // } else {
-        $total2 += $each['grand_total'];
-        // }
-        $count++;
-        ?>
-        </?php
-    }
-    // if(count($this->getBilling) > 5){
-    ?>
-            // ,["Other's", </?= $total2 ?>]
-    </?php
-    // }
-    ?>
-            ]);
-                    var options = {
-                        title: 'Billing for Year - </?php echo date("Y") ?>',
-                        is3D: true,
-                    };
+//         function invoiceChart() {
+//             var data = google.visualization.arrayToDataTable([
+//                     ['Account Number', 'Rate']
+//     </?php
+//     $total = 0;
+//     $total2 = 0;
+//     $count = 1;
+//     foreach ($this->getBilling as $each) {
+//         $total += $each['grand_total'];
+//         // if($count < 6){
+//         ?>
+//                 , ['</?= date('F', strtotime($each['trans_date'])) ?>', </?= round($each['grand_total'], 2) ?>]
+//         </?php
+//         // } else {
+//         $total2 += $each['grand_total'];
+//         // }
+//         $count++;
+//         ?>
+//         </?php
+//     }
+//     // if(count($this->getBilling) > 5){
+//     ?>
+//             // ,["Other's", </?= $total2 ?>]
+//     </?php
+//     // }
+//     ?>
+//             ]);
+//                     var options = {
+//                         title: 'Billing for Year - </?php echo date("Y") ?>',
+//                         is3D: true,
+//                     };
 
-            var chart = new google.visualization.PieChart(document.getElementById('invoiceChart'));
-            chart.draw(data, options);
-        }
-        $('.cibDiv1').remove();
-        $('.overlay').css('opacity', 1);
-        $('#expenseChart').css('padding', 0);
-</?php } ?>
-</?php if ($this->expenses) { ?>
-        google.setOnLoadCallback(expenseChart);
+//             var chart = new google.visualization.PieChart(document.getElementById('invoiceChart'));
+//             chart.draw(data, options);
+//         }
+//         $('.cibDiv1').remove();
+//         $('.overlay').css('opacity', 1);
+//         $('#expenseChart').css('padding', 0);
+// </?php } ?>
+// </?php if ($this->expenses) { ?>
+//         google.setOnLoadCallback(expenseChart);
 
-        function expenseChart() {
-            var data = google.visualization.arrayToDataTable([
-                    ['Account Number', 'Rate']
-    </?php
-    $total = 0;
-    $total2 = 0;
-    $count = 1;
-    foreach ($this->expenses as $each) {
-        $total += $each->netAmount;
-        // if($count < 6){
-        ?>
-                , ['</?= date('F', strtotime($each->transDate)) ?>', </?= round($each->netAmount, 2) ?>]
-        </?php
-        // } else {
-        // $total2 += $each->netAmount;
-        // }
-        // $count++;
-        ?>
-        </?php
-    }
-    // if(count($this->expenses) > 5){
-    ?>
-            // ,["Other's", </?= $total2 ?>]
-    </?php
-    // }
-    ?>
-            ]);
-                    var options = {
-                        title: 'Monthly Expenses for Year- </?php echo date("Y") ?>',
-                        is3D: true,
-                    };
+//         function expenseChart() {
+//             var data = google.visualization.arrayToDataTable([
+//                     ['Account Number', 'Rate']
+//     </?php
+//     $total = 0;
+//     $total2 = 0;
+//     $count = 1;
+//     foreach ($this->expenses as $each) {
+//         $total += $each->netAmount;
+//         // if($count < 6){
+//         ?>
+//                 , ['</?= date('F', strtotime($each->transDate)) ?>', </?= round($each->netAmount, 2) ?>]
+//         </?php
+//         // } else {
+//         // $total2 += $each->netAmount;
+//         // }
+//         // $count++;
+//         ?>
+//         </?php
+//     }
+//     // if(count($this->expenses) > 5){
+//     ?>
+//             // ,["Other's", </?= $total2 ?>]
+//     </?php
+//     // }
+//     ?>
+//             ]);
+//                     var options = {
+//                         title: 'Monthly Expenses for Year- </?php echo date("Y") ?>',
+//                         is3D: true,
+//                     };
 
-            var chart = new google.visualization.PieChart(document.getElementById('expenseChart'));
-            chart.draw(data, options);
-        }
+//             var chart = new google.visualization.PieChart(document.getElementById('expenseChart'));
+//             chart.draw(data, options);
+//         }
 
-        $('.cibDiv2').remove();
-        $('.overlay2').css('opacity', 1);
-        $('#expenseChart').css('padding', 0);
-</?php } ?>
-</?php
-		if (!$this->collectedAmount && !$this->expenses && !$this->getBilling) {
-?>
-		// alert('asdf');
-		$('.start').removeClass('hidden');
-</?php
-		}
-?>
-</script>
+//         $('.cibDiv2').remove();
+//         $('.overlay2').css('opacity', 1);
+//         $('#expenseChart').css('padding', 0);
+// </?php } ?>
+// </?php
+// 		if (!$this->collectedAmount && !$this->expenses && !$this->getBilling) {
+// ?>
+// 		// alert('asdf');
+// 		$('.start').removeClass('hidden');
+// </?php
+// 		}
+// ?>
+// // 
 <script>
 	$(function(){
 		$('.watchVideo').click(function(){
@@ -1504,7 +1510,7 @@ $org = DAOFactory::getTblOrganizationDAO()->load(Session::getSession('orgid'));
 			
 			var inYoutubeId = $(this).find('input[name="youtubeVidId"]').val();
 			
-			$.post('</?=URL?>dashboard/playVideo',{'inYoutubeId':inYoutubeId})
+			$.post('{{('dashboard/playVideo')}}',{'inYoutubeId':inYoutubeId})
 			.done(function(returnData){
 				$('.video-body').html(returnData);
 			});
@@ -1524,4 +1530,4 @@ $org = DAOFactory::getTblOrganizationDAO()->load(Session::getSession('orgid'));
 		$('.video-body').html('');
 	}
 	
-</script> -->
+</script> 

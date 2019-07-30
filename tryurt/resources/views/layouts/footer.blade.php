@@ -135,14 +135,14 @@ Session::setSession('class', $class);
 
 if ($total > 0) {
     ?> -->
-    <a href="{{('approval')}}" class="toremove">		
+    <!-- <a href="{{('approval')}}" class="toremove">		
         <div class="poRequest">
             <div>
                 <div class="gifCon"><img class="bell"src="{{asset('images/bell.gif')}}"></div>
             </div>
             <div class="bellCont">You have <span class="poRequestNo"></span> S.O waiting for approval</div>
         </div>
-    </a>
+    </a> -->
 
 
 <div class="footerHolderNew" >

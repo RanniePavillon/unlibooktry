@@ -149,6 +149,8 @@ Route::get('/setting/company', function () {
     return view('setting/company');
 });
 
+
+
 //REPORT        
 Route::get('/report/index', function () {
     return view('report/index');
@@ -165,4 +167,37 @@ Route::get('/inventory/on_hand', function () {
 
 Route::get('/inventory/branch', function () {
     return view('inventory/branch');
+});
+
+//INVOICE
+Route::get('/invoice/index', function () {
+    return view('invoice/index');
+});
+
+Route::get('/invoice/collection', function () {
+    return view('invoice/collection');
+});
+
+Route::get('/invoice/customers', function () {
+    return view('invoice/customers');
+});
+
+Route::get('/invoice/cost-import', function () {
+    return view('invoice/cost-import');
+});
+
+Route::get('/invoice/salesreceipt', function () {
+    return view('invoice/salesreceipt');
+});
+
+Route::get('/invoice/tasks', function () {
+    return view('invoice/tasks');
+});
+
+Route::get('/invoice/newreceipt', function () {
+    return view('invoice/newreceipt');
+});
+
+Route::get('/invoice/new', function () {
+    return view('invoice/new');
 });

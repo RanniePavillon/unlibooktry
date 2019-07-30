@@ -1,5 +1,3 @@
-
-@section('content')
 <style>
     .link-selected{
         color:maroon;

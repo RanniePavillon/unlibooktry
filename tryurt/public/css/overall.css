@@ -112,7 +112,7 @@
 .labelclass {position:relative}
 .labelclass:after {
     content: url('../images/backselect.png');
-    right:2px; top:-8px;
+    right:2px; top:0px;
     padding:0 0 2px;
     position:absolute;
     pointer-events:none;
@@ -128,7 +128,7 @@
 .labelclasstask {position:relative}
 .labelclasstask:after {
     content: url('../images/backselect.png');
-    right:5px; top:7px;
+    right:5px; top:0px;
     padding:0 0 2px;
     position:absolute;
     pointer-events:none;
@@ -245,7 +245,7 @@
 }
 .cSearch{
 	width: 130px;
-	height: 30px;
+	height: 29px;
 	border: none;
 	background-repeat:no-repeat;
 	padding-right: 25px; 
@@ -270,7 +270,7 @@
 }
 .search2Col{
 	width: 29px;
-    height: 30px;
+    height: 29px;
     border: none;
     border-radius: 2px 2px 2px 2px;
     font-size: 14px;
@@ -283,8 +283,8 @@
     background-color: rgb(230, 250, 222);
     background-repeat: no-repeat;
     position: absolute;
-    margin-top: -30px;
-    margin-left: 313px;
+    margin-top: -38px;
+    margin-left: 315px;
     background-size: 100%;
 }
 .search2Colpay{
@@ -308,7 +308,7 @@
 }
 .search2vendor{
 	width: 29px;
-    height: 30px;
+    height: 29px;
     border: none;
     border-radius: 2px 2px 2px 2px;
     font-size: 14px;
@@ -327,7 +327,7 @@
 }
 .search22Col{
 	width: 29px;
-    height: 30px;
+    height: 29px;
     border: none;
     border-radius: 2px 2px 2px 2px;
     font-size: 14px;
@@ -345,7 +345,7 @@
 }
 .SearchTasks {
 	width: 29px;
-    height: 30px;
+    height: 28px;
     border: none;
     border-radius: 2px 2px 2px 2px;
     font-size: 14px;
@@ -359,7 +359,7 @@
     background-repeat: no-repeat;
     position: absolute;
     margin-left: -34px;
-	margin-top:6px;
+	margin-top:10px;
     background-size: 100%;
 }
 .createNCR{

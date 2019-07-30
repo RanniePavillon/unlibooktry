@@ -10,6 +10,7 @@
         padding-top: 4px;
         padding-bottom:10px;
         box-shadow: 10px 4px 7px -9px rgba(50, 50, 50, 0.75), -6px 5px 11px -7px rgba(50, 50, 50, 0.75);
+        margin-top:80px;
     }
     .reportForm{
         width: 984px;
@@ -335,3 +336,4 @@
 </script>
 
 
+@extends('layouts.footer')

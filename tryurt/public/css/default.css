@@ -6,9 +6,7 @@ body{
 	background-position:center center;
 	background: -moz-radial-gradient(center, ellipse cover, #290202 26%, #C50808 100%); /* ff3.6+ */
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(26%, #290202), color-stop(100%, #C50808)); /* safari4+,chrome */
-	background:-webkit-radial-gradient(center, ellipse cover, #290202 26%, #C50808 100%); /* safari5.1+,chrome10+ */
 	background: -o-radial-gradient(center, ellipse cover, #290202 26%, #C50808 100%); /* opera 11.10+ */
-	background: -webkit-radial-gradient(center, ellipse cover, #290202 26%, #C50808 100%); /* ie10+ */
 	background:radial-gradient(ellipse at center, #8E8989 47tColorstr='#EE7979', endColorstr='#DC0505',GradientType=1 ); /* ie6-9 */
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -108,7 +106,8 @@ body{
 	font-size: 14px;
 	font-weight: bold;
 	padding-left:12px;
-	padding-top: 5px;
+	padding-bottom: 5px;
+	
 	
 	}
 .cloud{
@@ -134,7 +133,7 @@ body{
 .top a{
 	text-decoration: none;
 	/* color:#E2180F; */
-	color:rgb(201,17,17);
+	color:white;
 	font-size: 28.24px;
 	font-family:agency fb2!important;
 	font-weight:bold;
@@ -255,9 +254,11 @@ form{
 	text-decoration: none;
 	font-family: Agency FB;
 	color: rgb(15, 27, 110);
+	
 }
 .submit:hover {
 	color:#BD2D23;
+	
 }
 
 .link-selected{
@@ -379,7 +380,7 @@ form{
 }
 .mainHeaderLink{
 	padding: 5px 9px;
-	margin-left: 15px;
+	margin-left: 1px;
 	cursor: pointer;
 	color:white;
 	font-family:agency fb2!important;
@@ -388,7 +389,7 @@ form{
 }
 .mainHeaderLink:HOVER{
 	color:#fff;
-	background:#BD2D23;
+	background:#E25959;
 	border-radius:2px;
 }
 .activemainHeaderLink{
@@ -421,7 +422,8 @@ table{
 }
 .belowTop{
 	background-color: white;
-	margin-top:-85px;
+	margin-top:-50px;
+	
 }
 
 nav{
@@ -676,8 +678,7 @@ input[type="text"]:disabled, input[type="date"]:disabled, input[type="percentage
 	  color: rgb(255, 175, 2) !important;
 }
 .discountcontainer{
-	margin-top: 5px !important;
-	margin-bottom: 5px !important;
+	
 	width: 100%;
 	text-align: center;
 	margin-left: 51px;
@@ -742,4 +743,8 @@ input[type="text"]:disabled, input[type="date"]:disabled, input[type="percentage
 .video-exit:hover i
 {
 	color: #fff;
+}
+#ddb
+{
+width:105px;
 }
